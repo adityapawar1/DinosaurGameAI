@@ -7,5 +7,5 @@ For the program to recognize the game, you should place chrome in the top left c
 
 In later versions, I will try to make this easier to use.
 
-Dependencies (a lot): graphviz, matplotlib, numpy, opencv, mss, pyautogui, tesseract, neat
+Dependencies(there's a lot): graphviz, matplotlib, numpy, opencv, mss, pyautogui, tesseract, neat
 
