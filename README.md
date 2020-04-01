@@ -6,3 +6,6 @@ If you want to use the already trained model, run [will be avaliable in the futu
 For the program to recognize the game, you should place chrome in the top left corner of the screen. Use dinogame.py to make sure that all obstacles are recognized with red. Note: Make sure when the dinosaur is crounching, the program does not recognize it as an obstacle. 
 
 In later versions, I will try to make this easier to use.
+
+Dependencies (a lot): graphviz, matplotlib, numpy, opencv, mss, pyautogui, tesseract, neat
+
