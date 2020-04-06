@@ -229,9 +229,8 @@ def calibrate():
 
 
                 score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
-                # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
                 ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
-                score = str(pytesseract.image_to_string(thresh, config='digits'))
+                score = str(pytesseract.image_to_string(thresh, config='digits --oem 2 --psm 6'))
                 time_score = time.time() - score_time
                 try:
                     print(f'Game Over! Game: {game} - Score: {int(score)}, Time Score: {time_score}', end='\n\n')
@@ -250,13 +249,19 @@ def eval_genomes(genomes, config):
     global frame, ROI, play_toggle, game, score_ROI, generation, max_fitness, winner
     print('playing')
     last_dist = 0
-    tess_config = ('-l eng --oem 1 --psm 3')
+    tess_config = ('-l eng --oem 1 --psm 7')
+    score_tess_config = ('digits --oem 2 --psm 5')
     gameover_ROI = [(50, 120), (300, 900)]
     score_time = time.time()
     force_gameover = False
     generation += 1
     fgo_thresh = 350 + generation * 50
+    fgo_thresh = 1800 if fgo_thresh > 1800 else fgo_thresh
 
+    # reload()
+    print('reloaded page')
+
+    time.sleep(1)
 
     for genome_id, genome in genomes:
         genome.fitness = 0
@@ -302,16 +307,14 @@ def eval_genomes(genomes, config):
                 # feed data to nn and run output
                 dino_y = start_point[-1]
                 cac_y = end_point[-1]
-                delta_time = int((time.time() - score_time) * 1000)/1000
                 delta_dist = abs(last_dist - dist)
-                output = net.activate([dist, cac_y, dino_y, width, delta_dist, delta_time])
+                output = net.activate([dist, cac_y, dino_y, width, delta_dist])
 
                 # [0] jump, [1] crouch, [2] idle
                 if output[0] >= output[1] and output[0] >= output[2]: # if jump is the highest value
-                    # pyautogui.press('up')
-                    pass
+                    pyautogui.press('up')
                 elif output[1] >= output[0] and output[1] >= output[2]:
-                    # pyautogui.press('down')
+                    pyautogui.press('down')
                     if cac_y > 310:
                         genome.fitness += 150
                 elif output[2] >= output[0] and output[2] >= output[1]:
@@ -326,14 +329,12 @@ def eval_genomes(genomes, config):
                     text = pytesseract.image_to_string(gameover, config=tess_config)
                     # print('maybe gameover')
                     if (text.lower().replace(' ', '') == "gameover") or force_gameover:
-
+                        # total time the dino has ran for
+                        time_score = time.time() - score_time
                         # for when nn presses down and scrolls under game over text
                         if scroll_go:
                             pyautogui.scroll(20, x=690, y=450)
                             time.sleep(1)
-
-                        # total time the dino has ran for
-                        time_score = time.time() - score_time
 
                         # make sure score isnt ''
                         score = ''
@@ -342,7 +343,7 @@ def eval_genomes(genomes, config):
                             score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
                             # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
                             ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
-                            score = str(pytesseract.image_to_string(thresh, config='digits'))
+                            score = str(pytesseract.image_to_string(thresh, config=score_tess_config))
                             time.sleep(0.1)
                             count += 1
 
@@ -351,17 +352,18 @@ def eval_genomes(genomes, config):
 
                         print(f'Bonus: {genome.fitness}')
                         try:
-                            print(f'Game Over! Game: {game} - Score: {int(score)}, Time Score: {time_score}', end='')
+                            print(f'Game Over! Game: {game} - Score: {int(score)}, Time Score: {time_score}', end='\n\n')
                         except:
                             print(f"{score} is not an integer")
 
-                        print(f'Upper: {time_score * ((int(score)/100)+20)}, Lower: {time_score * 5}', end='\n\n')
-                        if int(score) > time_score * ((int(score)/100)+20):
-                            score = (time_score - 2) * 10
-                            print(f'Adjusted Score: {score}')
-                        elif int(score) < time_score * 5:
-                            score = (time_score) * 8
-                            print(f'Adjusted Score: {score}')
+                        # print(f'Upper: {time_score * ((int(score)/100)+20)}, Lower: {time_score * 5}', end='\n\n')
+                        if time_score < 1800:
+                            if int(score) > time_score * ((int(score)/100)+13):
+                                score = (time_score - 2) * 10
+                                print(f'Adjusted Score: {score}')
+                            elif int(score) < time_score * 5:
+                                score = (time_score) * 8
+                                print(f'Adjusted Score: {score}')
 
                         # make sure game lasted over three seconds
                         if time_score >= 3:
@@ -374,10 +376,15 @@ def eval_genomes(genomes, config):
                                 break
                             else:
                                 # replay game
+                                # reload()
+
                                 pyautogui.press('up')
                                 time.sleep(1)
                                 pyautogui.press('up')
+
                                 force_gameover = False
+
+
 
                 if len(points) > 25: # if nn spams down and scrolls the page
                     # pyautogui.scroll(20, x=690, y=450)
@@ -386,8 +393,9 @@ def eval_genomes(genomes, config):
                     print('scroll gameover')
                     time.sleep(0.5)
 
-                # when game cant see the game over test, it timesout
-                if score_time - time.time() > fgo_thresh:
+                # when game cant see the game over test, it times out
+                if score_time - time.time() > fgo_thresh and dist == last_dist:
+                    print('timeout')
                     force_gameover = True
 
                 last_dist = dist
@@ -396,6 +404,7 @@ def eval_genomes(genomes, config):
                 print('program terminated: keyboard interrupt')
                 cv2.destroyAllWindows()
                 break
+
 
 def show_vision():
     global fps, start_time, score_ROI, winner, stats, config
