@@ -377,13 +377,6 @@ def run(config_path):
         print(e)
 
     # print('DONE TRAINING')
-    print(x_train)
-    print(y_train)
-
-
-
-
-
 
 if __name__ == '__main__':
     local_dir = os.path.dirname(os.path.abspath(__file__))
