@@ -102,21 +102,85 @@ def drawBoundingBoxes(img, points, color):
 def findDistance(dino_coords, obstacles):
     dino_x = dino_coords[0][1][0]
     dino_mid_y = (dino_coords[0][0][1] + dino_coords[0][1][1]) / 2 # 226 when running
+    clump = []
 
-    cac_x = high
-    closest = [[0, dino_mid_y], [0, dino_mid_y]]
-    for coord in obstacles:
-        if cac_x > coord[1][0]:
-            cac_x = coord[0][0]
-            closest = coord
+    obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
 
-    if cac_x == high:
-        cac_x = 1300
+    cac_x = 1300
+    if len(obstacles) > 0:
+        closest = obstacles[0]
+        cac_x = obstacles[0][0][0]
+    else:
+        closest = [[0, dino_mid_y], [0, dino_mid_y]]
+
+    index = 0
+
+    clump.append(closest)
+    while index + 1 < len(obstacles):
+        c1_x = obstacles[index][1][0]
+        c2_x = obstacles[index+1][0][0]
+
+        if c2_x - c1_x < 15:
+            clump.append(obstacles[index+1])
+        else:
+            break
+        index += 1
+    width = 0
+
+    if len(clump) == 1:
+        width = clump[0][1][0] - clump[0][0][0]
+    else:
+        width = clump[len(clump)-1][1][0] - clump[0][0][0]
 
     cac_mid_y = (closest[0][1] + closest[1][1]) / 2
     cac_x -= time_pixel_buffer
     dist = cac_x - dino_x - time_pixel_buffer
-    return dist, (int(dino_x), int(dino_mid_y)), (int(cac_x), int(cac_mid_y))
+    return dist, (int(dino_x), int(dino_mid_y)), (int(cac_x), int(cac_mid_y)), width
+
+# def findDistance(dino_coords, obstacles):
+#     dino_x = dino_coords[0][1][0]
+#     dino_mid_y = (dino_coords[0][0][1] + dino_coords[0][1][1]) / 2 # 226 when running
+#     clump = []
+#
+#     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
+#     for i, obstacle in enumerate(obstacles):
+#         print(obstacle[0][1])
+#         if obstacle[0][1] < 180:
+#             obstacles.pop(i)
+#
+#     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
+#
+#     cac_x = 1300
+#     if len(obstacles) > 0:
+#         closest = obstacles[0]
+#         cac_x = obstacles[0][0][0]
+#     else:
+#         closest = [[0, dino_mid_y], [0, dino_mid_y]]
+#
+#     index = 0
+#
+#     clump.append(closest)
+#     while index + 1 < len(obstacles):
+#         c1_x = obstacles[index][1][0]
+#         c2_x = obstacles[index+1][0][0]
+#
+#         if c2_x - c1_x < 15:
+#             clump.append(obstacles[index+1])
+#         else:
+#             break
+#         index += 1
+#     width = 0
+#
+#     if len(clump) == 1:
+#         width = clump[0][1][0] - clump[0][0][0]
+#     else:
+#         width = clump[len(clump)-1][1][0] - clump[0][0][0]
+#
+#     cac_mid_y = (closest[0][1] + closest[1][1]) / 2
+#     cac_x -= time_pixel_buffer
+#     dist = cac_x - dino_x - time_pixel_buffer
+#     return dist, (int(dino_x), int(dino_mid_y)), (int(cac_x), int(cac_mid_y)), width
+
 
 def calibrate():
     global frame, ROI, play_toggle, game, score_ROI
@@ -231,23 +295,23 @@ def eval_genomes(genomes, config):
                 dino_coords = find.find_dino(img)
 
                 # find dist between dino and nearest obstacle
-                dist, start_point, end_point = findDistance(dino_coords, points)
+                dist, start_point, end_point, width = findDistance(dino_coords, points)
                 # print(dist)
                 # print(start_point, end_point)
 
                 # feed data to nn and run output
                 dino_y = start_point[-1]
                 cac_y = end_point[-1]
-                delta_time = int((score_time - time.time()) * 1000)/1000
-                output = net.activate([dist, cac_y, dino_y, delta_time])
+                delta_time = int((time.time() - score_time) * 1000)/1000
+                delta_dist = abs(last_dist - dist)
+                output = net.activate([dist, cac_y, dino_y, width, delta_dist, delta_time])
 
                 # [0] jump, [1] crouch, [2] idle
                 if output[0] >= output[1] and output[0] >= output[2]: # if jump is the highest value
-                    pyautogui.press('up')
-                    if generation > 7:
-                        genome.fitness -= 1
+                    # pyautogui.press('up')
+                    pass
                 elif output[1] >= output[0] and output[1] >= output[2]:
-                    pyautogui.press('down')
+                    # pyautogui.press('down')
                     if cac_y > 310:
                         genome.fitness += 150
                 elif output[2] >= output[0] and output[2] >= output[1]:
@@ -268,10 +332,13 @@ def eval_genomes(genomes, config):
                             pyautogui.scroll(20, x=690, y=450)
                             time.sleep(1)
 
+                        # total time the dino has ran for
+                        time_score = time.time() - score_time
+
                         # make sure score isnt ''
                         score = ''
                         count = 0
-                        while score == '' and count < 20:
+                        while score == '' and count < 5:
                             score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
                             # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
                             ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
@@ -279,16 +346,22 @@ def eval_genomes(genomes, config):
                             time.sleep(0.1)
                             count += 1
 
-                        if count >= 19:
+                        if count >= 4:
                             score = 44
 
-                        # total time the dino has ran for
-                        time_score = time.time() - score_time
                         print(f'Bonus: {genome.fitness}')
                         try:
-                            print(f'Game Over! Game: {game} - Score: {int(score)}, Time Score: {time_score}', end='\n\n')
+                            print(f'Game Over! Game: {game} - Score: {int(score)}, Time Score: {time_score}', end='')
                         except:
                             print(f"{score} is not an integer")
+
+                        print(f'Upper: {time_score * ((int(score)/100)+20)}, Lower: {time_score * 5}', end='\n\n')
+                        if int(score) > time_score * ((int(score)/100)+20):
+                            score = (time_score - 2) * 10
+                            print(f'Adjusted Score: {score}')
+                        elif int(score) < time_score * 5:
+                            score = (time_score) * 8
+                            print(f'Adjusted Score: {score}')
 
                         # make sure game lasted over three seconds
                         if time_score >= 3:
@@ -352,7 +425,7 @@ def show_vision():
 
             dino_coords = find.find_dino(img)
 
-            dist, start_point, end_point = findDistance(dino_coords, points)
+            dist, start_point, end_point, width = findDistance(dino_coords, points)
 
             # draw line from dino to nearest obstacle
             out = cv2.line(out, start_point, end_point, (0, 0, 0), 2)
@@ -400,7 +473,7 @@ def show_vision():
                 print('An entire generation has not passed yet')
 
             if winner != '':
-                node_names = {-1: 'distance', -2: 'obstacle y', -3: 'dino y', -4: 'dtime', 0: 'jump', 1: 'crouch', 2: 'idle'}
+                node_names = {-1: 'distance', -2: 'obstacle y', -3: 'dino y', -4: 'width', -5: 'speed', -5: 'dtime', 0: 'jump', 1: 'crouch', 2: 'idle'}
                 visualize.draw_net(config, winner, True, node_names=node_names)
 
                 visualize.draw_net(config, winner, view=True, node_names=node_names,
@@ -411,6 +484,29 @@ def show_vision():
                                    filename="winner-ctrnn-enabled-pruned.gv", show_disabled=False, prune_unused=True)
 
             break
+        except:
+            with open('winner-ctrnn', 'wb') as f:
+                pickle.dump(winner, f)
+
+            visualize.plot_stats(stats, ylog=True, view=True, filename="ctrnn-fitness.svg")
+
+            try:
+                visualize.plot_species(stats, view=True, filename="ctrnn-speciation.svg")
+            except ValueError:
+                print('An entire generation has not passed yet')
+
+            if winner != '':
+                node_names = {-1: 'distance', -2: 'obstacle y', -3: 'dino y', -4: 'dtime', 0: 'jump', 1: 'crouch', 2: 'idle'}
+                visualize.draw_net(config, winner, True, node_names=node_names)
+
+                visualize.draw_net(config, winner, view=True, node_names=node_names,
+                                   filename="winner-ctrnn.gv")
+                visualize.draw_net(config, winner, view=True, node_names=node_names,
+                                   filename="winner-ctrnn-enabled.gv", show_disabled=False)
+                visualize.draw_net(config, winner, view=True, node_names=node_names,
+                                   filename="winner-ctrnn-enabled-pruned.gv", show_disabled=False, prune_unused=True)
+
+
 
 
 winner = ''
@@ -430,9 +526,12 @@ def run(config_path):
     p.add_reporter(stats)
     p.add_reporter(neat.Checkpointer(1, 5))
 
+    # p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-18')
+    # print('restored population')
+
     winner = p.run(eval_genomes, 50) # run for up to 10 generations
 
-    print('DONE TRAINING')
+    # print('DONE TRAINING')
 
     # print('\nBest Dino: \n{!s}'.format(winner))
 
