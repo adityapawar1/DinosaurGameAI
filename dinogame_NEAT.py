@@ -217,7 +217,7 @@ def eval_genomes(genomes, config):
     print('playing')
     last_dist = 0
     tess_config = ('-l eng --oem 1 --psm 7')
-    score_tess_config = ('digits --oem 2 --psm 6')
+    score_tess_config = ('digits --oem 2 --psm 5')
     gameover_ROI = [(50, 120), (300, 900)]
     score_time = time.time()
     force_gameover = False
