@@ -105,6 +105,12 @@ def findDistance(dino_coords, obstacles):
     clump = []
 
     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
+    for i, obstacle in enumerate(obstacles):
+        print(obstacle[0][1])
+        if obstacle[0][1] < 180:
+            obstacles.pop(i)
+
+    obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
 
     cac_x = 1300
     if len(obstacles) > 0:
@@ -136,50 +142,6 @@ def findDistance(dino_coords, obstacles):
     cac_x -= time_pixel_buffer
     dist = cac_x - dino_x - time_pixel_buffer
     return dist, (int(dino_x), int(dino_mid_y)), (int(cac_x), int(cac_mid_y)), width
-
-# def findDistance(dino_coords, obstacles):
-#     dino_x = dino_coords[0][1][0]
-#     dino_mid_y = (dino_coords[0][0][1] + dino_coords[0][1][1]) / 2 # 226 when running
-#     clump = []
-#
-#     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
-#     for i, obstacle in enumerate(obstacles):
-#         print(obstacle[0][1])
-#         if obstacle[0][1] < 180:
-#             obstacles.pop(i)
-#
-#     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
-#
-#     cac_x = 1300
-#     if len(obstacles) > 0:
-#         closest = obstacles[0]
-#         cac_x = obstacles[0][0][0]
-#     else:
-#         closest = [[0, dino_mid_y], [0, dino_mid_y]]
-#
-#     index = 0
-#
-#     clump.append(closest)
-#     while index + 1 < len(obstacles):
-#         c1_x = obstacles[index][1][0]
-#         c2_x = obstacles[index+1][0][0]
-#
-#         if c2_x - c1_x < 15:
-#             clump.append(obstacles[index+1])
-#         else:
-#             break
-#         index += 1
-#     width = 0
-#
-#     if len(clump) == 1:
-#         width = clump[0][1][0] - clump[0][0][0]
-#     else:
-#         width = clump[len(clump)-1][1][0] - clump[0][0][0]
-#
-#     cac_mid_y = (closest[0][1] + closest[1][1]) / 2
-#     cac_x -= time_pixel_buffer
-#     dist = cac_x - dino_x - time_pixel_buffer
-#     return dist, (int(dino_x), int(dino_mid_y)), (int(cac_x), int(cac_mid_y)), width
 
 
 def calibrate():
