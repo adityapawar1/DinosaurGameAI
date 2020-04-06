@@ -225,7 +225,7 @@ def eval_genomes(genomes, config):
     fgo_thresh = 350 + generation * 50
     fgo_thresh = 1800 if fgo_thresh > 1800 else fgo_thresh
 
-    # reload()
+    reload()
     print('reloaded page')
 
     time.sleep(1)
@@ -345,15 +345,14 @@ def eval_genomes(genomes, config):
                                 break
                             else:
                                 # replay game
-                                # reload()
-
+                                reload()
+                                pyautogui.scroll(20, x=690, y=450)
                                 pyautogui.press('up')
                                 time.sleep(1)
                                 pyautogui.press('up')
+                                score_time = time.time()
 
                                 force_gameover = False
-
-
 
                 if len(points) > 25: # if nn spams down and scrolls the page
                     # pyautogui.scroll(20, x=690, y=450)
@@ -400,9 +399,6 @@ def run(config_path):
         print(e)
 
     # print('DONE TRAINING')
-    print(x_train)
-    print(y_train)
-
     with open('winner-ctrnn-new', 'wb') as f:
         pickle.dump(winner, f)
 
