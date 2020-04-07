@@ -396,7 +396,7 @@ def run(config_path):
     p.add_reporter(neat.Checkpointer(1, 5))
 
     try:
-        winner = p.run(eval_genomes, 50) # run for up to 100 generations
+        winner = p.run(eval_genomes, 75) # run for up to 75 generations
     except Exception as e:
         print(e)
 
