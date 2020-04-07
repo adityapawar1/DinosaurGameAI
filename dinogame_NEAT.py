@@ -300,6 +300,9 @@ def eval_genomes(genomes, config):
                         if scroll_go:
                             pyautogui.scroll(20, x=690, y=450)
                             time.sleep(1)
+                            pyautogui.scroll(20, x=690, y=450)
+                            print('scrolling')
+                            time.sleep(0.3)
 
                         # total time the dino has ran for
                         time_score = time.time() - score_time
@@ -312,9 +315,6 @@ def eval_genomes(genomes, config):
                             # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
                             ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
                             score = ocr.get_score(thresh)
-
-                            if count > 3:
-                                cv2.imwrite('bad.png', thresh)
                             time.sleep(0.1)
                             count += 1
 
