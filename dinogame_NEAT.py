@@ -256,8 +256,6 @@ def eval_genomes(genomes, config):
                 edged = cv2.Canny(thresh, 30, 200) # edge detection to find obstacle hitboxes
                 # find contours of obstacles
                 contours, hierarchy = cv2.findContours(edged, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-                # cv2.drawContours(out, contours, -1, (0, 0, 255), 2)
-
                 # get hitboxes
                 points = findBoundingBoxesWithShift(contours)
 
@@ -267,8 +265,6 @@ def eval_genomes(genomes, config):
 
                 # find dist between dino and nearest obstacle
                 dist, start_point, end_point, width = findDistance(dino_coords, points)
-                # print(dist)
-                # print(start_point, end_point)
 
                 # feed data to nn and run output
                 dino_y = start_point[-1]
@@ -285,8 +281,6 @@ def eval_genomes(genomes, config):
                         genome.fitness += 150
                 elif output[2] >= output[0] and output[2] >= output[1]:
                     pass
-
-                # if dist > 20 and dist < 260:
 
                 # check if game ended
                 if (len(points) >= 9 and len(points) < 20 and last_dist == dist) or force_gameover:
@@ -311,6 +305,8 @@ def eval_genomes(genomes, config):
                         score = ''
                         count = 0
                         while score == '' and count < 5:
+                            img = np.array(sct.grab(monitor))
+                            img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
                             score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
                             # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
                             ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
@@ -364,9 +360,12 @@ def eval_genomes(genomes, config):
                     time.sleep(0.5)
 
                 # when game cant see the game over test, it times out
-                if score_time - time.time() > fgo_thresh and dist == last_dist:
+                if score_time - time.time() > fgo_thresh:
                     print('timeout')
                     force_gameover = True
+
+                if int(time.time())%1000 == 0:
+                    pyautogui.scroll(20, x=690, y=450)
 
                 last_dist = dist
 
@@ -387,8 +386,8 @@ def run(config_path):
 
     p = neat.Population(config)
 
-    # p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-23')
-    # print('restored population')
+    p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-7')
+    print('restored population')
 
     p.add_reporter(neat.StdOutReporter(True))
     stats = neat.StatisticsReporter()
