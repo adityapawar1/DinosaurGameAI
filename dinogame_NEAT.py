@@ -13,8 +13,6 @@ import neat
 import visualize # provided by neat
 import pickle
 
-x_train = []
-y_train = []
 print('starting')
 
 # title of our window
