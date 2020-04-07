@@ -1,19 +1,18 @@
 import cv2 as cv
 import numpy as np
 
-def find_score(img_gray):
+def get_score(img):
     values = []
 
     for i in range(10):
-        exec(f"template{i} = cv.imread('scores/number{i}.png',0)")
+        exec(f"template{i} = cv.imread('ManualOCR/scores/number{i}.png',0)")
 
     for i in range(10):
         arr = []
-        exec('''res = cv.matchTemplate(img_gray,template{},cv.TM_CCOEFF_NORMED)\n
-    threshold = 0.95\n
-    loc = np.where( res >= threshold)\n
-    values.append(loc[1])\n
-        '''.format(i))
+        exec(("res = cv.matchTemplate(img,template{},cv.TM_CCOEFF_NORMED)\n" +
+            "threshold = 0.95\n" +
+            "loc = np.where( res >= threshold)\n" +
+            "values.append(loc[1])").format(i))
 
     coords = []
 
@@ -34,4 +33,4 @@ def find_score(img_gray):
     for d in digits:
         number += str(d)
 
-    print(int(number))
+    return int(number) if number != '' else ''
