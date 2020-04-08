@@ -5,10 +5,9 @@ def get_score(img):
     values = []
 
     for i in range(10):
-        exec(f"template{i} = cv.imread('ManualOCR/scores/number{i}.png',0)")
-
+        exec(f"template{i} = cv.imread('scores/number{i}.png',0)")
+        
     for i in range(10):
-        arr = []
         exec(("res = cv.matchTemplate(img,template{},cv.TM_CCOEFF_NORMED)\n" +
             "threshold = 0.95\n" +
             "loc = np.where( res >= threshold)\n" +
