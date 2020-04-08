@@ -13,6 +13,7 @@ import os
 import neat
 import visualize # provided by neat
 import pickle
+import template_matching as ocr
 
 print('starting')
 
@@ -99,6 +100,11 @@ def drawBoundingBoxes(img, points, color):
 
     return img
 
+def reload():
+    pyautogui.keyDown('command')
+    pyautogui.press('r')
+    pyautogui.keyUp('command')
+
 def findDistance(dino_coords, obstacles):
     dino_x = dino_coords[0][1][0]
     dino_mid_y = (dino_coords[0][0][1] + dino_coords[0][1][1]) / 2 # 226 when running
@@ -106,8 +112,7 @@ def findDistance(dino_coords, obstacles):
 
     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
     for i, obstacle in enumerate(obstacles):
-        print(obstacle[0][1])
-        if obstacle[0][1] < 180:
+        if obstacle[0][1] < 185:
             obstacles.pop(i)
 
     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
@@ -220,7 +225,7 @@ def eval_genomes(genomes, config):
     fgo_thresh = 350 + generation * 50
     fgo_thresh = 1800 if fgo_thresh > 1800 else fgo_thresh
 
-    # reload()
+    reload()
     print('reloaded page')
 
     time.sleep(1)
@@ -252,8 +257,6 @@ def eval_genomes(genomes, config):
                 edged = cv2.Canny(thresh, 30, 200) # edge detection to find obstacle hitboxes
                 # find contours of obstacles
                 contours, hierarchy = cv2.findContours(edged, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-                # cv2.drawContours(out, contours, -1, (0, 0, 255), 2)
-
                 # get hitboxes
                 points = findBoundingBoxesWithShift(contours)
 
@@ -263,8 +266,6 @@ def eval_genomes(genomes, config):
 
                 # find dist between dino and nearest obstacle
                 dist, start_point, end_point, width = findDistance(dino_coords, points)
-                # print(dist)
-                # print(start_point, end_point)
 
                 # feed data to nn and run output
                 dino_y = start_point[-1]
@@ -282,8 +283,6 @@ def eval_genomes(genomes, config):
                 elif output[2] >= output[0] and output[2] >= output[1]:
                     pass
 
-                # if dist > 20 and dist < 260:
-
                 # check if game ended
                 if (len(points) >= 9 and len(points) < 20 and last_dist == dist) or force_gameover:
                     # Run tesseract OCR on image to see if words "game over" are on screen
@@ -291,26 +290,33 @@ def eval_genomes(genomes, config):
                     text = pytesseract.image_to_string(gameover, config=tess_config)
                     # print('maybe gameover')
                     if (text.lower().replace(' ', '') == "gameover") or force_gameover:
-                        # total time the dino has ran for
-                        time_score = time.time() - score_time
+
                         # for when nn presses down and scrolls under game over text
                         if scroll_go:
                             pyautogui.scroll(20, x=690, y=450)
                             time.sleep(1)
+                            pyautogui.scroll(20, x=690, y=450)
+                            print('scrolling')
+                            time.sleep(0.3)
+
+                        # total time the dino has ran for
+                        time_score = time.time() - score_time
 
                         # make sure score isnt ''
                         score = ''
                         count = 0
                         while score == '' and count < 5:
+                            img = np.array(sct.grab(monitor))
+                            img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
                             score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
                             # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
                             ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
-                            score = str(pytesseract.image_to_string(thresh, config=score_tess_config))
+                            score = ocr.get_score(thresh)
                             time.sleep(0.1)
                             count += 1
 
                         if count >= 4:
-                            score = 44
+                            score = 0
 
                         print(f'Bonus: {genome.fitness}')
                         try:
@@ -338,15 +344,14 @@ def eval_genomes(genomes, config):
                                 break
                             else:
                                 # replay game
-                                # reload()
-
+                                reload()
+                                pyautogui.scroll(20, x=690, y=450)
                                 pyautogui.press('up')
                                 time.sleep(1)
                                 pyautogui.press('up')
+                                score_time = time.time()
 
                                 force_gameover = False
-
-
 
                 if len(points) > 25: # if nn spams down and scrolls the page
                     # pyautogui.scroll(20, x=690, y=450)
@@ -356,9 +361,12 @@ def eval_genomes(genomes, config):
                     time.sleep(0.5)
 
                 # when game cant see the game over test, it times out
-                if score_time - time.time() > fgo_thresh and dist == last_dist:
+                if score_time - time.time() > fgo_thresh:
                     print('timeout')
                     force_gameover = True
+
+                if int(time.time())%1000 == 0:
+                    pyautogui.scroll(20, x=690, y=450)
 
                 last_dist = dist
 
@@ -366,6 +374,7 @@ def eval_genomes(genomes, config):
                 print('program terminated: keyboard interrupt')
                 cv2.destroyAllWindows()
                 break
+
 
 
 def show_vision():

@@ -106,7 +106,7 @@ def findDistance(dino_coords, obstacles):
 
     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
     for i, obstacle in enumerate(obstacles):
-        if obstacle[0][1] < 180:
+        if obstacle[0][1] < 185:
             obstacles.pop(i)
 
     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
@@ -305,17 +305,18 @@ def eval_genomes(genomes, config):
                         score = ''
                         count = 0
                         while score == '' and count < 5:
+                            pyautogui.scroll(10, x=690, y=450)
                             img = np.array(sct.grab(monitor))
                             img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
                             score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
                             # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
                             ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
                             score = ocr.get_score(thresh)
-                            time.sleep(0.1)
+                            time.sleep(0.7)
                             count += 1
 
                         if count >= 4:
-                            score = 44
+                            score = 0
 
                         print(f'Bonus: {genome.fitness}')
                         try:
@@ -366,6 +367,7 @@ def eval_genomes(genomes, config):
 
                 if int(time.time())%1000 == 0:
                     pyautogui.scroll(20, x=690, y=450)
+                    print('scrolling')
 
                 last_dist = dist
 
@@ -386,8 +388,8 @@ def run(config_path):
 
     p = neat.Population(config)
 
-    p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-7')
-    print('restored population')
+    # p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-7')
+    # print('restored population')
 
     p.add_reporter(neat.StdOutReporter(True))
     stats = neat.StatisticsReporter()
@@ -395,7 +397,7 @@ def run(config_path):
     p.add_reporter(neat.Checkpointer(1, 5))
 
     try:
-        winner = p.run(eval_genomes, 75) # run for up to 75 generations
+        winner = p.run(eval_genomes, 100) # run for up to 100 generations
     except Exception as e:
         print(e)
 

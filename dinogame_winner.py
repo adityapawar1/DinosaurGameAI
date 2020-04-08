@@ -248,8 +248,6 @@ def play(net):
             edged = cv2.Canny(thresh, 30, 200) # edge detection to find obstacle hitboxes
             # find contours of obstacles
             contours, hierarchy = cv2.findContours(edged, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-            # cv2.drawContours(out, contours, -1, (0, 0, 255), 2)
-
             # get hitboxes
             points = findBoundingBoxesWithShift(contours)
 
@@ -259,25 +257,22 @@ def play(net):
 
             # find dist between dino and nearest obstacle
             dist, start_point, end_point, width = findDistance(dino_coords, points)
-            # print(dist)
-            # print(start_point, end_point)
 
             # feed data to nn and run output
             dino_y = start_point[-1]
             cac_y = end_point[-1]
-            delta_time = int((time.time() - score_time) * 1000)/1000
             delta_dist = abs(last_dist - dist)
-            output = net.activate([dist, cac_y, dino_y, width, delta_dist, delta_time])
+            output = net.activate([dist, cac_y, dino_y, width, delta_dist])
 
             # [0] jump, [1] crouch, [2] idle
             if output[0] >= output[1] and output[0] >= output[2]: # if jump is the highest value
                 pyautogui.press('up')
             elif output[1] >= output[0] and output[1] >= output[2]:
                 pyautogui.press('down')
+                if cac_y > 310:
+                    genome.fitness += 150
             elif output[2] >= output[0] and output[2] >= output[1]:
                 pass
-
-            # if dist > 20 and dist < 260:
 
             # check if game ended
             if (len(points) >= 9 and len(points) < 20 and last_dist == dist) or force_gameover:
@@ -291,6 +286,9 @@ def play(net):
                     if scroll_go:
                         pyautogui.scroll(20, x=690, y=450)
                         time.sleep(1)
+                        pyautogui.scroll(20, x=690, y=450)
+                        print('scrolling')
+                        time.sleep(0.3)
 
                     # total time the dino has ran for
                     time_score = time.time() - score_time
@@ -299,16 +297,19 @@ def play(net):
                     score = ''
                     count = 0
                     while score == '' and count < 5:
+                        img = np.array(sct.grab(monitor))
+                        img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
                         score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
                         # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
                         ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
-                        score = str(pytesseract.image_to_string(thresh, config='digits'))
+                        score = ocr.get_score(thresh)
                         time.sleep(0.1)
                         count += 1
 
                     if count >= 4:
                         score = 44
 
+                    print(f'Bonus: {genome.fitness}')
                     try:
                         print(f'Game Over! Game: {game} - Score: {int(score)}, Time Score: {time_score}', end='\n\n')
                     except:
@@ -316,7 +317,7 @@ def play(net):
 
                     # print(f'Upper: {time_score * ((int(score)/100)+20)}, Lower: {time_score * 5}', end='\n\n')
                     if time_score < 1800:
-                        if int(score) > time_score * ((int(score)/100)+15):
+                        if int(score) > time_score * ((int(score)/100)+13):
                             score = (time_score - 2) * 10
                             print(f'Adjusted Score: {score}')
                         elif int(score) < time_score * 5:
@@ -328,14 +329,19 @@ def play(net):
                         game += 1
                         if not force_gameover or scroll_go:
                             # set fitness
-                            x_train.append(time_score)
-                            y_train.append(int(score))
+                            genome.fitness += int(score)
+                            if genome.fitness > max_fitness:
+                                winner = genome
                             break
                         else:
                             # replay game
+                            reload()
+                            pyautogui.scroll(20, x=690, y=450)
                             pyautogui.press('up')
                             time.sleep(1)
                             pyautogui.press('up')
+                            score_time = time.time()
+
                             force_gameover = False
 
             if len(points) > 25: # if nn spams down and scrolls the page
@@ -345,12 +351,16 @@ def play(net):
                 print('scroll gameover')
                 time.sleep(0.5)
 
-            # when game cant see the game over test, it timesout
+            # when game cant see the game over test, it times out
             if score_time - time.time() > fgo_thresh:
+                print('timeout')
                 force_gameover = True
 
-            last_dist = dist
+            if int(time.time())%1000 == 0:
+                pyautogui.scroll(20, x=690, y=450)
 
+            last_dist = dist
+            
         except KeyboardInterrupt:
             print('program terminated: keyboard interrupt')
             cv2.destroyAllWindows()
@@ -358,7 +368,7 @@ def play(net):
 
 def run(config_path):
 
-    with open('winner-ctrnn', 'rb') as f:
+    with open('winner-ctrnn-new', 'rb') as f:
         winner = pickle.load(f)
 
     print(winner)
