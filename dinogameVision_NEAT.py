@@ -112,7 +112,7 @@ def findDistance(dino_coords, obstacles):
 
     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
     for i, obstacle in enumerate(obstacles):
-        if obstacle[0][1] < 185:
+        if obstacle[1][1] < 145:
             obstacles.pop(i)
 
     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
@@ -465,7 +465,7 @@ def show_vision():
 
             break
         except:
-            with open('winner-ctrnn', 'wb') as f:
+            with open('winner-ctrnn-new', 'wb') as f:
                 pickle.dump(winner, f)
 
             visualize.plot_stats(stats, ylog=True, view=True, filename="ctrnn-fitness.svg")

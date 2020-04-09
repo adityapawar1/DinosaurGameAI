@@ -106,7 +106,7 @@ def findDistance(dino_coords, obstacles):
 
     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
     for i, obstacle in enumerate(obstacles):
-        if obstacle[0][1] < 185:
+        if obstacle[1][1] < 145:
             obstacles.pop(i)
 
     obstacles = sorted(obstacles, key=lambda obstacle: obstacle[0][0])
@@ -325,7 +325,7 @@ def eval_genomes(genomes, config):
                             print(f"{score} is not an integer")
 
                         # print(f'Upper: {time_score * ((int(score)/100)+20)}, Lower: {time_score * 5}', end='\n\n')
-                        if time_score < 1800:
+                        if time_score < 1800 and False:
                             if int(score) > time_score * ((int(score)/100)+13):
                                 score = (time_score - 2) * 10
                                 print(f'Adjusted Score: {score}')
@@ -396,7 +396,7 @@ def run(config_path):
 
     p = neat.Population(config)
 
-    # p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-7')
+    # p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-6')
     # print('restored population')
 
     p.add_reporter(neat.StdOutReporter(True))
