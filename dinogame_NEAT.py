@@ -360,14 +360,22 @@ def eval_genomes(genomes, config):
                     print('scroll gameover')
                     time.sleep(0.5)
 
-                # when game cant see the game over test, it times out
+                # when game cant see the game over text, it times out
                 if score_time - time.time() > fgo_thresh:
                     print('timeout')
                     force_gameover = True
 
                 if int(time.time())%1000 == 0:
-                    pyautogui.scroll(20, x=690, y=450)
-                    print('scrolling')
+                    pyautogui.scroll(-10, x=690, y=450)
+                    pyautogui.scroll(30, x=690, y=450)
+                    print('auto scrolling')
+                    if time.time() - score_time > 1800:
+                        reload()
+                        pyautogui.press('up')
+                        time.sleep(1)
+                        pyautogui.press('up')
+                        score_time = time.time()
+
 
                 last_dist = dist
 
