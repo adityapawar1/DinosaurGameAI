@@ -130,6 +130,7 @@ dmypy.json
 
 
 ctrnn*
+checkpoints
 neat-checkpoint-*
 # winner-ctrnn-new*
 winner-ctrnn*
