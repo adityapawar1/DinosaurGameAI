@@ -128,4 +128,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+
+ctrnn*
+neat-checkpoint-*
+# winner-ctrnn-new*
+winner-ctrnn*
+Digraph*
+score*.png
 ctrnn-fitness.svg
