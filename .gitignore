@@ -131,7 +131,7 @@ dmypy.json
 
 ctrnn*
 neat-checkpoint-*
-winner-ctrnn-new*
-winner-ctrnn-new.*
+# winner-ctrnn-new*
+winner-ctrnn*
 Digraph*
 score*.png
