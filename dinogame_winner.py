@@ -12,6 +12,7 @@ import os
 import neat
 import visualize # provided by neat
 import pickle
+import template_matching as ocr
 
 x_train = []
 y_train = []
@@ -360,7 +361,7 @@ def play(net):
                 pyautogui.scroll(20, x=690, y=450)
 
             last_dist = dist
-            
+
         except KeyboardInterrupt:
             print('program terminated: keyboard interrupt')
             cv2.destroyAllWindows()
@@ -368,7 +369,7 @@ def play(net):
 
 def run(config_path):
 
-    with open('winner-ctrnn-new', 'rb') as f:
+    with open('winner-ctrnn-23k', 'rb') as f:
         winner = pickle.load(f)
 
     print(winner)
