@@ -277,6 +277,7 @@ def eval_genomes(genomes, config):
                     pyautogui.press('up')
                 elif output[1] >= output[0] and output[1] >= output[2]:
                     pyautogui.press('down')
+                    genome.fitness += 0.5
                     if cac_y > 310:
                         genome.fitness += 150
                 elif output[2] >= output[0] and output[2] >= output[1]:
