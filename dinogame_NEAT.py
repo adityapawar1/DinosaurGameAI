@@ -212,7 +212,7 @@ def calibrate():
             force_gameover = True
 
 def eval_genomes(genomes, config):
-    global frame, ROI, play_toggle, game, score_ROI, generation, max_fitness, winner
+    global frame, ROI, play_toggle, game, score_ROI, generation, max_fitness, winner, gamelog
     print('playing')
     last_dist = 0
     tess_config = ('-l eng --oem 1 --psm 7')
@@ -321,6 +321,7 @@ def eval_genomes(genomes, config):
                         # print(f'Bonus: {genome.fitness}')
                         try:
                             print(f'Game Over! Game: {game} - \nScore: {int(score)}\nBonus: {genome.fitness}\nTime: {time_score}\nFitness: {genome.fitness + int(score)}', end='\n\n')
+                            gamelog.write(f'Game Over! Game: {game} - \nScore: {int(score)}\nBonus: {genome.fitness}\nTime: {time_score}\nFitness: {genome.fitness + int(score)}\n\n')
                         except:
                             print(f"{score} is not an integer")
 
@@ -387,6 +388,7 @@ def eval_genomes(genomes, config):
 winner = ''
 stats = ''
 config = None
+gamelog = open('gamelog.txt', 'w+')
 def run(config_path):
     global winner, stats, config
     calibrate() # make sure game starts the same way everytime
@@ -408,6 +410,8 @@ def run(config_path):
         winner = p.run(eval_genomes, 100) # run for up to 100 generations
     except Exception as e:
         print(e)
+
+    gamelog.close()
 
     # print('DONE TRAINING')
     with open('winner-ctrnn-new', 'wb') as f:

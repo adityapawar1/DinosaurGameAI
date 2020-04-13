@@ -1,0 +1,21 @@
+Game Over! Game: 1 - 
+Score: 46
+Bonus: 0
+Time: 6.117914915084839
+Fitness: 46Game Over! Game: 2 - 
+Score: 44
+Bonus: 0
+Time: 5.353650808334351
+Fitness: 44Game Over! Game: 3 - 
+Score: 51
+Bonus: 2.0
+Time: 6.095325946807861
+Fitness: 53.0Game Over! Game: 4 - 
+Score: 42
+Bonus: 11.0
+Time: 4.866202116012573
+Fitness: 53.0Game Over! Game: 5 - 
+Score: 73
+Bonus: 1.0
+Time: 8.38298487663269
+Fitness: 74.0
