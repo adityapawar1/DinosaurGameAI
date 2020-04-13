@@ -318,10 +318,9 @@ def eval_genomes(genomes, config):
 
                         if count >= 4:
                             score = 0
-
-                        print(f'Bonus: {genome.fitness}')
+                        # print(f'Bonus: {genome.fitness}')
                         try:
-                            print(f'Game Over! Game: {game} - \nScore: {int(score)}\n Time: {time_score}\n Fitness: {genome.fitness + int(score)}', end='\n\n')
+                            print(f'Game Over! Game: {game} - \nScore: {int(score)}\nBonus: {genome.fitness}\nTime: {time_score}\nFitness: {genome.fitness + int(score)}', end='\n\n')
                         except:
                             print(f"{score} is not an integer")
 
