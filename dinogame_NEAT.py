@@ -325,15 +325,6 @@ def eval_genomes(genomes, config):
                         except:
                             print(f"{score} is not an integer")
 
-                        # print(f'Upper: {time_score * ((int(score)/100)+20)}, Lower: {time_score * 5}', end='\n\n')
-                        if time_score < 1800 and False:
-                            if int(score) > time_score * ((int(score)/100)+13):
-                                score = (time_score - 2) * 10
-                                print(f'Adjusted Score: {score}')
-                            elif int(score) < time_score * 5:
-                                score = (time_score) * 8
-                                print(f'Adjusted Score: {score}')
-
                         # make sure game lasted over three seconds
                         if time_score >= 3:
                             game += 1
@@ -355,7 +346,6 @@ def eval_genomes(genomes, config):
                                 force_gameover = False
 
                 if len(points) > 25: # if nn spams down and scrolls the page
-                    # pyautogui.scroll(20, x=690, y=450)
                     force_gameover = True
                     scroll_go = True
                     print('scroll gameover')
