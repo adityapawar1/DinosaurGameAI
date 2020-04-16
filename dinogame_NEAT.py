@@ -221,8 +221,8 @@ def eval_genomes(genomes, config):
     score_time = time.time()
     force_gameover = False
     generation += 1
-    fgo_thresh = 350 + generation * 50
-    fgo_thresh = 1800 if fgo_thresh > 1800 else fgo_thresh
+    # fgo_thresh = 350 + generation * 50
+    # fgo_thresh = 1800 if fgo_thresh > 1800 else fgo_thresh
 
     reload()
     print('reloaded page')
@@ -321,7 +321,7 @@ def eval_genomes(genomes, config):
                         # print(f'Bonus: {genome.fitness}')
                         try:
                             print(f'Game Over! Game: {game} - \nScore: {int(score)}\nBonus: {genome.fitness}\nTime: {time_score}\nFitness: {genome.fitness + int(score)}', end='\n\n')
-                            gamelog.write(f'Game Over! Game: {game} - \nScore: {int(score)}\nBonus: {genome.fitness}\nTime: {time_score}\nFitness: {genome.fitness + int(score)}\n\n')
+                            gamelog.write(f'Game Over! Game: {game} - ID: {genome_id}\nScore: {int(score)}\nBonus: {genome.fitness}\nTime: {time_score}\nFitness: {genome.fitness + int(score)}\n\n')
                         except:
                             print(f"{score} is not an integer")
 
@@ -352,9 +352,9 @@ def eval_genomes(genomes, config):
                     time.sleep(0.5)
 
                 # when game cant see the game over text, it times out
-                if score_time - time.time() > fgo_thresh:
-                    print('timeout')
-                    force_gameover = True
+                # if score_time - time.time() > fgo_thresh:
+                #     print('timeout')
+                #     force_gameover = True
 
                 if int(time.time())%1000 == 0:
                     pyautogui.scroll(-10, x=690, y=450)
@@ -378,7 +378,7 @@ def eval_genomes(genomes, config):
 winner = ''
 stats = ''
 config = None
-gamelog = open('gamelog.txt', 'w')
+gamelog = open('gamelog.txt', 'a+')
 def run(config_path):
     global winner, stats, config
     calibrate() # make sure game starts the same way everytime
