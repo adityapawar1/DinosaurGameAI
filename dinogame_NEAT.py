@@ -277,7 +277,7 @@ def eval_genomes(genomes, config):
                     pyautogui.press('up')
                 elif output[1] >= output[0] and output[1] >= output[2]:
                     pyautogui.press('down')
-                    genome.fitness += 0.5
+                    genome.fitness += 0.25
                     if cac_y > 310:
                         genome.fitness += 150
                 elif output[2] >= output[0] and output[2] >= output[1]:
@@ -378,7 +378,7 @@ def eval_genomes(genomes, config):
 winner = ''
 stats = ''
 config = None
-gamelog = open('gamelog.txt', 'w+')
+gamelog = open('gamelog.txt', 'w')
 def run(config_path):
     global winner, stats, config
     calibrate() # make sure game starts the same way everytime
@@ -388,8 +388,8 @@ def run(config_path):
 
     p = neat.Population(config)
 
-    # p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-6')
-    # print('restored population')
+    p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-77')
+    print('restored population')
 
     p.add_reporter(neat.StdOutReporter(True))
     stats = neat.StatisticsReporter()
@@ -397,7 +397,7 @@ def run(config_path):
     p.add_reporter(neat.Checkpointer(1, 5))
 
     try:
-        winner = p.run(eval_genomes, 100) # run for up to 100 generations
+        winner = p.run(eval_genomes, 23) # run for up to 100 generations
     except Exception as e:
         print(e)
 
