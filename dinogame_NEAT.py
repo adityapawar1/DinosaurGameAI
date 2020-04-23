@@ -256,6 +256,7 @@ def eval_genomes(genomes, config):
             try:
                 # screen shot
                 img = np.array(sct.grab(monitor))
+                screen = img.copy()
 
                 # roi of just obstacles
                 obstacles = img[ROI[0][0]:ROI[0][1], ROI[1][0]:ROI[1][1]]
@@ -367,9 +368,9 @@ def eval_genomes(genomes, config):
                     pyautogui.scroll(30, x=690, y=450)
                     print('auto scrolling')
 
-                if int(time.time())%250 < 4:
+                if int(time.time())%100 < 3:
                     print('score check')
-                    score = getScore()
+                    score = getScore(screen)
                     scores.append(score)
                 elif len(scores) != 0:
                     print(scores)
@@ -408,7 +409,7 @@ def run(config_path):
 
     p = neat.Population(config)
 
-    p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-149')
+    p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-154')
     print('restored population')
 
     p.add_reporter(neat.StdOutReporter(True))
