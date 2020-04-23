@@ -244,6 +244,7 @@ def eval_genomes(genomes, config):
 
         scroll_go = False
         force_gameover = False
+        last_frame = False
         score_time = time.time()
         scores = []
 
@@ -251,12 +252,15 @@ def eval_genomes(genomes, config):
         pyautogui.press('up')
         time.sleep(1)
         pyautogui.press('up')
+
         while True:
             # Get raw pixels from the screen, save it to a Numpy array
             try:
+
                 # screen shot
                 img = np.array(sct.grab(monitor))
                 screen = img.copy()
+
 
                 # roi of just obstacles
                 obstacles = img[ROI[0][0]:ROI[0][1], ROI[1][0]:ROI[1][1]]
@@ -358,20 +362,21 @@ def eval_genomes(genomes, config):
                     print('scroll gameover')
                     time.sleep(0.5)
 
-                # when game cant see the game over text, it times out
-                # if score_time - time.time() > fgo_thresh:
-                #     print('timeout')
-                #     force_gameover = True
-
                 if int(time.time())%1000 == 0:
                     pyautogui.scroll(-10, x=690, y=450)
                     pyautogui.scroll(30, x=690, y=450)
                     print('auto scrolling')
 
-                if int(time.time())%100 < 3:
-                    print('score check')
-                    score = getScore(screen)
-                    scores.append(score)
+                if int(time.time())%100 < 2:
+                    if last_frame:
+                        print('score check')
+                        score = getScore(screen)
+                        if score != '':
+                            scores.append(score)
+                        last_frame = False
+                    else:
+                        last_frame = True
+
                 elif len(scores) != 0:
                     print(scores)
                     cont = False
