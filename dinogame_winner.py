@@ -369,7 +369,7 @@ def play(net):
 
 def run(config_path):
 
-    with open('winner-ctrnn-23k', 'rb') as f:
+    with open('winner-ctrnn-new', 'rb') as f:
         winner = pickle.load(f)
 
     print(winner)

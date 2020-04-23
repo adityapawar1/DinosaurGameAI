@@ -99,6 +99,15 @@ def drawBoundingBoxes(img, points, color):
 
     return img
 
+def getScore(img):
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
+    # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
+    ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
+    score = ocr.get_score(thresh)
+
+    return score
+
 def findDistance(dino_coords, obstacles):
     dino_x = dino_coords[0][1][0]
     dino_mid_y = (dino_coords[0][0][1] + dino_coords[0][1][1]) / 2 # 226 when running
@@ -236,6 +245,7 @@ def eval_genomes(genomes, config):
         scroll_go = False
         force_gameover = False
         score_time = time.time()
+        scores = []
 
         # start game
         pyautogui.press('up')
@@ -308,11 +318,7 @@ def eval_genomes(genomes, config):
                         while score == '' and count < 5:
                             pyautogui.scroll(10, x=690, y=450)
                             img = np.array(sct.grab(monitor))
-                            img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-                            score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
-                            # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
-                            ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
-                            score = ocr.get_score(thresh)
+                            score = getScore(img)
                             time.sleep(0.7)
                             count += 1
 
@@ -360,12 +366,26 @@ def eval_genomes(genomes, config):
                     pyautogui.scroll(-10, x=690, y=450)
                     pyautogui.scroll(30, x=690, y=450)
                     print('auto scrolling')
-                    if time.time() - score_time > 1800:
-                        reload()
-                        pyautogui.press('up')
-                        time.sleep(1)
-                        pyautogui.press('up')
-                        score_time = time.time()
+
+                if int(time.time())%250 < 4:
+                    print('score check')
+                    score = getScore()
+                    scores.append(score)
+                elif len(scores) != 0:
+                    print(scores)
+                    cont = False
+                    for i in range(len(scores)):
+                        if scores[i-1] == scores[i]:
+                            continue
+                        else:
+                            cont = True
+                            break
+
+                    if not cont:
+                        force_gameover = True
+
+                    scores = []
+
 
 
                 last_dist = dist
@@ -388,7 +408,7 @@ def run(config_path):
 
     p = neat.Population(config)
 
-    p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-77')
+    p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-149')
     print('restored population')
 
     p.add_reporter(neat.StdOutReporter(True))
@@ -397,7 +417,7 @@ def run(config_path):
     p.add_reporter(neat.Checkpointer(1, 5))
 
     try:
-        winner = p.run(eval_genomes, 23) # run for up to 100 generations
+        winner = p.run(eval_genomes, 21) # run for up to 100 generations
     except Exception as e:
         print(e)
 
