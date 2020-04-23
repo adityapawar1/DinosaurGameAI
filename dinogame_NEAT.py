@@ -245,6 +245,7 @@ def eval_genomes(genomes, config):
         scroll_go = False
         force_gameover = False
         last_frame = False
+        first = True
         score_time = time.time()
         scores = []
 
@@ -367,9 +368,11 @@ def eval_genomes(genomes, config):
                     pyautogui.scroll(30, x=690, y=450)
                     print('auto scrolling')
 
-                if int(time.time())%100 < 2:
-                    if last_frame:
+                if int(time.time())%100 < 3:
+                    if first:
                         print('score check')
+                        first = False
+                    if last_frame:
                         score = getScore(screen)
                         if score != '':
                             scores.append(score)
@@ -378,7 +381,7 @@ def eval_genomes(genomes, config):
                         last_frame = True
 
                 elif len(scores) != 0:
-                    print(scores)
+                    # print(scores)
                     cont = False
                     for i in range(len(scores)):
                         if scores[i-1] == scores[i]:
@@ -388,9 +391,13 @@ def eval_genomes(genomes, config):
                             break
 
                     if not cont:
+                        print('score check: failed')
                         force_gameover = True
+                    else:
+                        print('score check: passed')
 
                     scores = []
+                    first = True
 
 
 
