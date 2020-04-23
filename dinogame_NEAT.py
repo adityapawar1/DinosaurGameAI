@@ -368,7 +368,7 @@ def eval_genomes(genomes, config):
                     pyautogui.scroll(30, x=690, y=450)
                     print('auto scrolling')
 
-                if int(time.time())%100 < 3:
+                if int(time.time())%750 < 3:
                     if first:
                         print('score check')
                         first = False
