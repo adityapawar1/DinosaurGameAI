@@ -21190,3 +21190,3213 @@ Bonus: 1.0
 Time: 6.136892318725586
 Fitness: 52.0
 
+Game Over! Game: 1 - ID: 132
+Score: 11306
+Bonus: 209.0
+Time: 612.3248591423035
+Fitness: 11515.0
+
+Game Over! Game: 2 - ID: 81
+Score: 424
+Bonus: 7.75
+Time: 39.83203887939453
+Fitness: 431.75
+
+Game Over! Game: 3 - ID: 102
+Score: 5513
+Bonus: 82.0
+Time: 314.3847270011902
+Fitness: 5595.0
+
+Game Over! Game: 4 - ID: 103
+Score: 18
+Bonus: 2.25
+Time: 13.780057191848755
+Fitness: 20.25
+
+Game Over! Game: 5 - ID: 104
+Score: 43
+Bonus: 2.0
+Time: 4.719588994979858
+Fitness: 45.0
+
+Game Over! Game: 6 - ID: 105
+Score: 42
+Bonus: 0
+Time: 4.883678913116455
+Fitness: 42
+
+Game Over! Game: 7 - ID: 106
+Score: 636
+Bonus: 11.0
+Time: 55.70848727226257
+Fitness: 647.0
+
+Game Over! Game: 8 - ID: 107
+Score: 474
+Bonus: 0
+Time: 43.59784913063049
+Fitness: 474
+
+Game Over! Game: 9 - ID: 108
+Score: 43
+Bonus: 0
+Time: 5.300971031188965
+Fitness: 43
+
+Game Over! Game: 10 - ID: 109
+Score: 18
+Bonus: 2.0
+Time: 7.54462194442749
+Fitness: 20.0
+
+Game Over! Game: 11 - ID: 110
+Score: 7827
+Bonus: 139.25
+Time: 430.5655109882355
+Fitness: 7966.25
+
+Game Over! Game: 12 - ID: 100
+Score: 846
+Bonus: 15.0
+Time: 70.29907608032227
+Fitness: 861.0
+
+Game Over! Game: 13 - ID: 92
+Score: 6846
+Bonus: 110.5
+Time: 382.74273204803467
+Fitness: 6956.5
+
+Game Over! Game: 14 - ID: 111
+Score: 8043
+Bonus: 117.5
+Time: 444.10874795913696
+Fitness: 8160.5
+
+Game Over! Game: 15 - ID: 112
+Score: 42
+Bonus: 0.25
+Time: 4.902207851409912
+Fitness: 42.25
+
+Game Over! Game: 16 - ID: 113
+Score: 43
+Bonus: 1.5
+Time: 7.40220308303833
+Fitness: 44.5
+
+Game Over! Game: 17 - ID: 114
+Score: 81
+Bonus: 1.75
+Time: 9.136167049407959
+Fitness: 82.75
+
+Game Over! Game: 18 - ID: 115
+Score: 485
+Bonus: 9.25
+Time: 44.605493783950806
+Fitness: 494.25
+
+Game Over! Game: 19 - ID: 116
+Score: 1135
+Bonus: 16.5
+Time: 88.26353883743286
+Fitness: 1151.5
+
+Game Over! Game: 20 - ID: 117
+Score: 42
+Bonus: 1.25
+Time: 7.316199779510498
+Fitness: 43.25
+
+Game Over! Game: 21 - ID: 118
+Score: 43
+Bonus: 5.25
+Time: 7.421149015426636
+Fitness: 48.25
+
+Game Over! Game: 22 - ID: 119
+Score: 43
+Bonus: 4.25
+Time: 7.361418962478638
+Fitness: 47.25
+
+Game Over! Game: 23 - ID: 120
+Score: 18633
+Bonus: 265.25
+Time: 987.6813549995422
+Fitness: 18898.25
+
+Game Over! Game: 24 - ID: 121
+Score: 108
+Bonus: 1.75
+Time: 12.003863096237183
+Fitness: 109.75
+
+Game Over! Game: 25 - ID: 122
+Score: 42
+Bonus: 1.75
+Time: 7.42298698425293
+Fitness: 43.75
+
+Game Over! Game: 26 - ID: 132
+Score: 37906
+Bonus: 717.75
+Time: 1976.3571829795837
+Fitness: 38623.75
+
+Game Over! Game: 27 - ID: 110
+Score: 18855
+Bonus: 305.5
+Time: 999.136910200119
+Fitness: 19160.5
+
+Game Over! Game: 28 - ID: 1
+Score: 18857
+Bonus: 319.75
+Time: 998.9071261882782
+Fitness: 19176.75
+
+Game Over! Game: 29 - ID: 2
+Score: 585
+Bonus: 10.25
+Time: 52.01924705505371
+Fitness: 595.25
+
+Game Over! Game: 30 - ID: 3
+Score: 534
+Bonus: 0
+Time: 48.1882119178772
+Fitness: 534
+
+Game Over! Game: 31 - ID: 4
+Score: 43
+Bonus: 1.5
+Time: 7.418223142623901
+Fitness: 44.5
+
+Game Over! Game: 32 - ID: 5
+Score: 18
+Bonus: 4.75
+Time: 23.89937472343445
+Fitness: 22.75
+
+Game Over! Game: 33 - ID: 6
+Score: 923
+Bonus: 16.25
+Time: 72.31441521644592
+Fitness: 939.25
+
+Game Over! Game: 34 - ID: 7
+Score: 14822
+Bonus: 211.75
+Time: 792.0183529853821
+Fitness: 15033.75
+
+Game Over! Game: 35 - ID: 8
+Score: 42
+Bonus: 0
+Time: 4.892697095870972
+Fitness: 42
+
+Game Over! Game: 36 - ID: 9
+Score: 769
+Bonus: 14.5
+Time: 64.84537887573242
+Fitness: 783.5
+
+Game Over! Game: 37 - ID: 10
+Score: 43
+Bonus: 0.25
+Time: 5.213135242462158
+Fitness: 43.25
+
+Game Over! Game: 38 - ID: 120
+Score: 5854
+Bonus: 88.75
+Time: 331.8654098510742
+Fitness: 5942.75
+
+Game Over! Game: 39 - ID: 111
+Score: 3790
+Bonus: 57.25
+Time: 226.0407099723816
+Fitness: 3847.25
+
+Game Over! Game: 40 - ID: 11
+Score: 42
+Bonus: 0.25
+Time: 4.881566047668457
+Fitness: 42.25
+
+Game Over! Game: 41 - ID: 12
+Score: 42
+Bonus: 6.75
+Time: 7.434267997741699
+Fitness: 48.75
+
+Game Over! Game: 42 - ID: 13
+Score: 42
+Bonus: 0.25
+Time: 4.863109111785889
+Fitness: 42.25
+
+Game Over! Game: 43 - ID: 14
+Score: 43
+Bonus: 3.75
+Time: 7.3912529945373535
+Fitness: 46.75
+
+Game Over! Game: 44 - ID: 15
+Score: 43
+Bonus: 3.75
+Time: 7.38529109954834
+Fitness: 46.75
+
+Game Over! Game: 45 - ID: 16
+Score: 2010
+Bonus: 30.0
+Time: 135.0852439403534
+Fitness: 2040.0
+
+Game Over! Game: 46 - ID: 17
+Score: 18
+Bonus: 1.75
+Time: 7.4634809494018555
+Fitness: 19.75
+
+Game Over! Game: 47 - ID: 18
+Score: 2113
+Bonus: 34.75
+Time: 137.31270003318787
+Fitness: 2147.75
+
+Game Over! Game: 48 - ID: 19
+Score: 465
+Bonus: 8.25
+Time: 43.25337505340576
+Fitness: 473.25
+
+Game Over! Game: 49 - ID: 20
+Score: 43
+Bonus: 0
+Time: 5.169733047485352
+Fitness: 43
+
+Game Over! Game: 50 - ID: 21
+Score: 69
+Bonus: 0.75
+Time: 7.87255072593689
+Fitness: 69.75
+
+Game Over! Game: 51 - ID: 1
+Score: 18542
+Bonus: 299.25
+Time: 982.8469130992889
+Fitness: 18841.25
+
+Game Over! Game: 52 - ID: 111
+Score: 18856
+Bonus: 276.25
+Time: 1001.3213131427765
+Fitness: 19132.25
+
+Game Over! Game: 53 - ID: 22
+Score: 42
+Bonus: 0.25
+Time: 4.909862041473389
+Fitness: 42.25
+
+Game Over! Game: 54 - ID: 23
+Score: 13454
+Bonus: 254.75
+Time: 721.8094959259033
+Fitness: 13708.75
+
+Game Over! Game: 55 - ID: 24
+Score: 1768
+Bonus: 28.25
+Time: 122.63790822029114
+Fitness: 1796.25
+
+Game Over! Game: 56 - ID: 25
+Score: 1439
+Bonus: 25.25
+Time: 105.165687084198
+Fitness: 1464.25
+
+Game Over! Game: 57 - ID: 26
+Score: 478
+Bonus: 7.25
+Time: 43.925535917282104
+Fitness: 485.25
+
+Game Over! Game: 58 - ID: 27
+Score: 587
+Bonus: 7.0
+Time: 52.15841317176819
+Fitness: 594.0
+
+Game Over! Game: 59 - ID: 28
+Score: 43
+Bonus: 0
+Time: 5.346243143081665
+Fitness: 43
+
+Game Over! Game: 60 - ID: 132
+Score: 17614
+Bonus: 319.0
+Time: 935.116870880127
+Fitness: 17933.0
+
+Game Over! Game: 61 - ID: 110
+Score: 38353
+Bonus: 639.75
+Time: 1998.9382598400116
+Fitness: 38992.75
+
+Game Over! Game: 62 - ID: 29
+Score: 692
+Bonus: 0
+Time: 59.64034414291382
+Fitness: 692
+
+Game Over! Game: 63 - ID: 30
+Score: 37184
+Bonus: 528.5
+Time: 1938.994968175888
+Fitness: 37712.5
+
+Game Over! Game: 64 - ID: 31
+Score: 43
+Bonus: 0
+Time: 5.209594011306763
+Fitness: 43
+
+Game Over! Game: 65 - ID: 32
+Score: 1177
+Bonus: 18.5
+Time: 90.46754717826843
+Fitness: 1195.5
+
+Game Over! Game: 66 - ID: 33
+Score: 36465
+Bonus: 591.75
+Time: 1901.7233760356903
+Fitness: 37056.75
+
+Game Over! Game: 67 - ID: 34
+Score: 1283
+Bonus: 0
+Time: 96.76454305648804
+Fitness: 1283
+
+Game Over! Game: 68 - ID: 35
+Score: 602
+Bonus: 11.0
+Time: 53.43081521987915
+Fitness: 613.0
+
+Game Over! Game: 69 - ID: 36
+Score: 18
+Bonus: 1.5
+Time: 9.210377216339111
+Fitness: 19.5
+
+Game Over! Game: 70 - ID: 37
+Score: 43
+Bonus: 0.25
+Time: 2.169008255004883
+Fitness: 43.25
+
+Game Over! Game: 70 - ID: 37
+Score: 43
+Bonus: 0.25
+Time: 3.215646982192993
+Fitness: 43.25
+
+Game Over! Game: 71 - ID: 38
+Score: 702
+Bonus: 12.5
+Time: 60.337921142578125
+Fitness: 714.5
+
+Game Over! Game: 72 - ID: 39
+Score: 605
+Bonus: 0
+Time: 53.4503390789032
+Fitness: 605
+
+Game Over! Game: 73 - ID: 40
+Score: 43
+Bonus: 0.25
+Time: 4.899765968322754
+Fitness: 43.25
+
+Game Over! Game: 74 - ID: 41
+Score: 242
+Bonus: 6.0
+Time: 24.486249923706055
+Fitness: 248.0
+
+Game Over! Game: 75 - ID: 42
+Score: 623
+Bonus: 10.25
+Time: 54.899646043777466
+Fitness: 633.25
+
+Game Over! Game: 76 - ID: 111
+Score: 4811
+Bonus: 70.75
+Time: 278.6762948036194
+Fitness: 4881.75
+
+Game Over! Game: 77 - ID: 23
+Score: 707
+Bonus: 14.0
+Time: 60.82361817359924
+Fitness: 721.0
+
+Game Over! Game: 78 - ID: 43
+Score: 19531
+Bonus: 276.5
+Time: 1033.2520792484283
+Fitness: 19807.5
+
+Game Over! Game: 79 - ID: 44
+Score: 43
+Bonus: 0
+Time: 5.289530992507935
+Fitness: 43
+
+Game Over! Game: 80 - ID: 45
+Score: 515
+Bonus: 9.25
+Time: 46.772209882736206
+Fitness: 524.25
+
+Game Over! Game: 81 - ID: 46
+Score: 1139
+Bonus: 19.25
+Time: 88.42712020874023
+Fitness: 1158.25
+
+Game Over! Game: 82 - ID: 47
+Score: 18
+Bonus: 2.5
+Time: 12.769959926605225
+Fitness: 20.5
+
+Game Over! Game: 83 - ID: 48
+Score: 1058
+Bonus: 18.5
+Time: 80.63720488548279
+Fitness: 1076.5
+
+Game Over! Game: 84 - ID: 110
+Score: 19197
+Bonus: 316.75
+Time: 1016.3510148525238
+Fitness: 19513.75
+
+Game Over! Game: 85 - ID: 30
+Score: 79943
+Bonus: 1127.5
+Time: 4131.327929019928
+Fitness: 81070.5
+
+Game Over! Game: 86 - ID: 49
+Score: 489
+Bonus: 9.0
+Time: 44.69953894615173
+Fitness: 498.0
+
+Game Over! Game: 87 - ID: 50
+Score: 4336
+Bonus: 68.5
+Time: 254.062659740448
+Fitness: 4404.5
+
+Game Over! Game: 88 - ID: 51
+Score: 18
+Bonus: 20.25
+Time: 86.19890284538269
+Fitness: 38.25
+
+Game Over! Game: 89 - ID: 52
+Score: 18
+Bonus: 1.5
+Time: 4.856215000152588
+Fitness: 19.5
+
+Game Over! Game: 90 - ID: 53
+Score: 122
+Bonus: 0
+Time: 10.580281257629395
+Fitness: 122
+
+Game Over! Game: 91 - ID: 54
+Score: 18
+Bonus: 5.75
+Time: 25.198325872421265
+Fitness: 23.75
+
+Game Over! Game: 92 - ID: 55
+Score: 18
+Bonus: 1.75
+Time: 4.756042003631592
+Fitness: 19.75
+
+Game Over! Game: 93 - ID: 56
+Score: 43
+Bonus: 2.0
+Time: 4.744247913360596
+Fitness: 45.0
+
+Game Over! Game: 94 - ID: 57
+Score: 1230
+Bonus: 0
+Time: 93.7617449760437
+Fitness: 1230
+
+Game Over! Game: 95 - ID: 58
+Score: 18
+Bonus: 1.0
+Time: 7.542274713516235
+Fitness: 19.0
+
+Game Over! Game: 96 - ID: 59
+Score: 43
+Bonus: 1.5
+Time: 4.678677082061768
+Fitness: 44.5
+
+Game Over! Game: 97 - ID: 60
+Score: 43
+Bonus: 1.0
+Time: 5.2350242137908936
+Fitness: 44.0
+
+Game Over! Game: 98 - ID: 61
+Score: 1104
+Bonus: 0
+Time: 86.3996160030365
+Fitness: 1104
+
+Game Over! Game: 99 - ID: 62
+Score: 18
+Bonus: 3.25
+Time: 15.207310199737549
+Fitness: 21.25
+
+Game Over! Game: 100 - ID: 63
+Score: 43
+Bonus: 0.5
+Time: 2.1903421878814697
+Fitness: 43.5
+
+Game Over! Game: 100 - ID: 63
+Score: 43
+Bonus: 0.5
+Time: 3.2224621772766113
+Fitness: 43.5
+
+Game Over! Game: 101 - ID: 43
+Score: 3291
+Bonus: 50.25
+Time: 201.06669688224792
+Fitness: 3341.25
+
+Game Over! Game: 102 - ID: 111
+Score: 4963
+Bonus: 76.5
+Time: 286.1919400691986
+Fitness: 5039.5
+
+Game Over! Game: 103 - ID: 64
+Score: 43
+Bonus: 0.25
+Time: 4.868603944778442
+Fitness: 43.25
+
+Game Over! Game: 104 - ID: 65
+Score: 1024
+Bonus: 0
+Time: 81.33894968032837
+Fitness: 1024
+
+Game Over! Game: 105 - ID: 66
+Score: 43
+Bonus: 0.25
+Time: 4.890440940856934
+Fitness: 43.25
+
+Game Over! Game: 106 - ID: 67
+Score: 1024
+Bonus: 0
+Time: 81.32908010482788
+Fitness: 1024
+
+Game Over! Game: 107 - ID: 68
+Score: 43
+Bonus: 0
+Time: 5.071147918701172
+Fitness: 43
+
+Game Over! Game: 108 - ID: 69
+Score: 43
+Bonus: 3.75
+Time: 7.3982017040252686
+Fitness: 46.75
+
+Game Over! Game: 109 - ID: 70
+Score: 654
+Bonus: 12.5
+Time: 57.15383982658386
+Fitness: 666.5
+
+Game Over! Game: 110 - ID: 30
+Score: 4555
+Bonus: 69.25
+Time: 265.55146169662476
+Fitness: 4624.25
+
+Game Over! Game: 111 - ID: 110
+Score: 497
+Bonus: 10.0
+Time: 45.529974937438965
+Fitness: 507.0
+
+Game Over! Game: 112 - ID: 71
+Score: 42
+Bonus: 0.25
+Time: 4.864047288894653
+Fitness: 42.25
+
+Game Over! Game: 113 - ID: 72
+Score: 18
+Bonus: 1.0
+Time: 7.482671022415161
+Fitness: 19.0
+
+Game Over! Game: 114 - ID: 73
+Score: 51
+Bonus: 0
+Time: 3.4849631786346436
+Fitness: 51
+
+Game Over! Game: 115 - ID: 74
+Score: 841
+Bonus: 0
+Time: 69.73339104652405
+Fitness: 841
+
+Game Over! Game: 116 - ID: 75
+Score: 64
+Bonus: 0
+Time: 7.4513490200042725
+Fitness: 64
+
+Game Over! Game: 117 - ID: 76
+Score: 477
+Bonus: 0
+Time: 43.86181902885437
+Fitness: 477
+
+Game Over! Game: 118 - ID: 77
+Score: 18
+Bonus: 2.25
+Time: 12.687665939331055
+Fitness: 20.25
+
+Game Over! Game: 119 - ID: 78
+Score: 18857
+Bonus: 354.25
+Time: 996.3130686283112
+Fitness: 19211.25
+
+Game Over! Game: 120 - ID: 79
+Score: 43
+Bonus: 0
+Time: 5.230191946029663
+Fitness: 43
+
+Game Over! Game: 121 - ID: 80
+Score: 1016
+Bonus: 16.0
+Time: 80.85067796707153
+Fitness: 1032.0
+
+Game Over! Game: 122 - ID: 81
+Score: 53
+Bonus: 0
+Time: 6.392653942108154
+Fitness: 53
+
+Game Over! Game: 123 - ID: 82
+Score: 42
+Bonus: 1.5
+Time: 7.322950839996338
+Fitness: 43.5
+
+Game Over! Game: 124 - ID: 83
+Score: 11583
+Bonus: 163.5
+Time: 625.8646841049194
+Fitness: 11746.5
+
+Game Over! Game: 125 - ID: 84
+Score: 18
+Bonus: 4.75
+Time: 24.088823080062866
+Fitness: 22.75
+
+Game Over! Game: 126 - ID: 111
+Score: 1820
+Bonus: 30.25
+Time: 125.2568941116333
+Fitness: 1850.25
+
+Game Over! Game: 127 - ID: 43
+Score: 21167
+Bonus: 301.0
+Time: 1117.5138537883759
+Fitness: 21468.0
+
+Game Over! Game: 128 - ID: 85
+Score: 43
+Bonus: 0
+Time: 5.194568872451782
+Fitness: 43
+
+Game Over! Game: 129 - ID: 86
+Score: 43
+Bonus: 0
+Time: 5.263178110122681
+Fitness: 43
+
+Game Over! Game: 130 - ID: 87
+Score: 43
+Bonus: 6.5
+Time: 7.431765794754028
+Fitness: 49.5
+
+Game Over! Game: 131 - ID: 88
+Score: 18
+Bonus: 1.75
+Time: 7.415737867355347
+Fitness: 19.75
+
+Game Over! Game: 132 - ID: 89
+Score: 53
+Bonus: 0
+Time: 3.5779311656951904
+Fitness: 53
+
+Game Over! Game: 133 - ID: 90
+Score: 43
+Bonus: 0
+Time: 4.8770201206207275
+Fitness: 43
+
+Game Over! Game: 134 - ID: 91
+Score: 1610
+Bonus: 24.0
+Time: 114.22793817520142
+Fitness: 1634.0
+
+Game Over! Game: 135 - ID: 78
+Score: 35346
+Bonus: 644.25
+Time: 1844.45906996727
+Fitness: 35990.25
+
+Game Over! Game: 136 - ID: 83
+Score: 11056
+Bonus: 155.25
+Time: 598.632385969162
+Fitness: 11211.25
+
+Game Over! Game: 137 - ID: 92
+Score: 380
+Bonus: 0
+Time: 36.08088970184326
+Fitness: 380
+
+Game Over! Game: 138 - ID: 93
+Score: 559
+Bonus: 9.5
+Time: 50.10116481781006
+Fitness: 568.5
+
+Game Over! Game: 139 - ID: 94
+Score: 43
+Bonus: 0
+Time: 5.360674142837524
+Fitness: 43
+
+Game Over! Game: 140 - ID: 95
+Score: 5347
+Bonus: 89.0
+Time: 306.1819772720337
+Fitness: 5436.0
+
+Game Over! Game: 141 - ID: 96
+Score: 3432
+Bonus: 58.75
+Time: 207.659893989563
+Fitness: 3490.75
+
+Game Over! Game: 142 - ID: 97
+Score: 801
+Bonus: 14.0
+Time: 67.26147890090942
+Fitness: 815.0
+
+Game Over! Game: 143 - ID: 98
+Score: 72
+Bonus: 0
+Time: 8.293858051300049
+Fitness: 72
+
+Game Over! Game: 144 - ID: 99
+Score: 13288
+Bonus: 276.0
+Time: 713.6501331329346
+Fitness: 13564.0
+
+Game Over! Game: 145 - ID: 100
+Score: 18862
+Bonus: 273.75
+Time: 999.2110600471497
+Fitness: 19135.75
+
+Game Over! Game: 146 - ID: 101
+Score: 747
+Bonus: 0
+Time: 500.97033619880676
+Fitness: 747
+
+Game Over! Game: 147 - ID: 101
+Score: 502
+Bonus: 0
+Time: 44.94543099403381
+Fitness: 502
+
+Game Over! Game: 148 - ID: 102
+Score: 1963
+Bonus: 44.0
+Time: 132.68838500976562
+Fitness: 2007.0
+
+Game Over! Game: 149 - ID: 103
+Score: 43
+Bonus: 3.75
+Time: 7.476629972457886
+Fitness: 46.75
+
+Game Over! Game: 150 - ID: 104
+Score: 43
+Bonus: 3.75
+Time: 7.456079959869385
+Fitness: 46.75
+
+Game Over! Game: 151 - ID: 105
+Score: 43
+Bonus: 0
+Time: 4.926899194717407
+Fitness: 43
+
+Game Over! Game: 152 - ID: 99
+Score: 801
+Bonus: 14.25
+Time: 67.56623411178589
+Fitness: 815.25
+
+Game Over! Game: 153 - ID: 95
+Score: 480
+Bonus: 8.5
+Time: 44.07622718811035
+Fitness: 488.5
+
+Game Over! Game: 154 - ID: 106
+Score: 872
+Bonus: 14.25
+Time: 72.03295993804932
+Fitness: 886.25
+
+Game Over! Game: 155 - ID: 107
+Score: 379
+Bonus: 7.75
+Time: 36.25387120246887
+Fitness: 386.75
+
+Game Over! Game: 156 - ID: 108
+Score: 18
+Bonus: 1.0
+Time: 7.558917045593262
+Fitness: 19.0
+
+Game Over! Game: 157 - ID: 109
+Score: 1102
+Bonus: 16.75
+Time: 83.30797505378723
+Fitness: 1118.75
+
+Game Over! Game: 158 - ID: 110
+Score: 43
+Bonus: 6.0
+Time: 5.081202745437622
+Fitness: 49.0
+
+Game Over! Game: 159 - ID: 111
+Score: 18299
+Bonus: 261.0
+Time: 970.5869328975677
+Fitness: 18560.0
+
+Game Over! Game: 160 - ID: 78
+Score: 18853
+Bonus: 333.75
+Time: 1501.1611859798431
+Fitness: 19186.75
+
+Game Over! Game: 161 - ID: 78
+Score: 18
+Bonus: 679.75
+Time: 1027.4641799926758
+Fitness: 697.75
+
+Game Over! Game: 162 - ID: 43
+Score: 1973
+Bonus: 31.5
+Time: 130.15403699874878
+Fitness: 2004.5
+
+Game Over! Game: 163 - ID: 112
+Score: 43
+Bonus: 0
+Time: 5.330832004547119
+Fitness: 43
+
+Game Over! Game: 164 - ID: 113
+Score: 572
+Bonus: 15.0
+Time: 53.359703063964844
+Fitness: 587.0
+
+Game Over! Game: 165 - ID: 114
+Score: 50
+Bonus: 1.5
+Time: 8.00036907196045
+Fitness: 51.5
+
+Game Over! Game: 166 - ID: 115
+Score: 52
+Bonus: 0.5
+Time: 6.2818639278411865
+Fitness: 52.5
+
+Game Over! Game: 167 - ID: 116
+Score: 43
+Bonus: 0.25
+Time: 5.2478461265563965
+Fitness: 43.25
+
+Game Over! Game: 168 - ID: 117
+Score: 43
+Bonus: 6.0
+Time: 5.102680921554565
+Fitness: 49.0
+
+Game Over! Game: 169 - ID: 118
+Score: 43
+Bonus: 0
+Time: 5.24800181388855
+Fitness: 43
+
+Game Over! Game: 170 - ID: 119
+Score: 43
+Bonus: 0
+Time: 5.226356029510498
+Fitness: 43
+
+Game Over! Game: 171 - ID: 120
+Score: 43
+Bonus: 0.25
+Time: 4.93030309677124
+Fitness: 43.25
+
+Game Over! Game: 172 - ID: 121
+Score: 43
+Bonus: 6.5
+Time: 7.421544075012207
+Fitness: 49.5
+
+Game Over! Game: 173 - ID: 122
+Score: 471
+Bonus: 3.75
+Time: 43.41510510444641
+Fitness: 474.75
+
+Game Over! Game: 174 - ID: 123
+Score: 965
+Bonus: 0
+Time: 77.65468192100525
+Fitness: 965
+
+Game Over! Game: 175 - ID: 124
+Score: 43
+Bonus: 0
+Time: 4.899296045303345
+Fitness: 43
+
+Game Over! Game: 176 - ID: 125
+Score: 43
+Bonus: 0.75
+Time: 4.933815002441406
+Fitness: 43.75
+
+Game Over! Game: 177 - ID: 126
+Score: 43
+Bonus: 3.75
+Time: 7.500988960266113
+Fitness: 46.75
+
+Game Over! Game: 178 - ID: 43
+Score: 951
+Bonus: 16.5
+Time: 77.67313289642334
+Fitness: 967.5
+
+Game Over! Game: 179 - ID: 123
+Score: 1118
+Bonus: 0
+Time: 86.94434928894043
+Fitness: 1118
+
+Game Over! Game: 180 - ID: 127
+Score: 43
+Bonus: 0.25
+Time: 4.871643781661987
+Fitness: 43.25
+
+Game Over! Game: 181 - ID: 128
+Score: 43
+Bonus: 0
+Time: 5.267071962356567
+Fitness: 43
+
+Game Over! Game: 182 - ID: 129
+Score: 18
+Bonus: 1.25
+Time: 8.937611818313599
+Fitness: 19.25
+
+Game Over! Game: 183 - ID: 130
+Score: 43
+Bonus: 0
+Time: 2.18146014213562
+Fitness: 43
+
+Game Over! Game: 183 - ID: 130
+Score: 43
+Bonus: 0
+Time: 3.2324130535125732
+Fitness: 43
+
+Game Over! Game: 184 - ID: 131
+Score: 16642
+Bonus: 257.25
+Time: 885.6013860702515
+Fitness: 16899.25
+
+Game Over! Game: 185 - ID: 132
+Score: 43
+Bonus: 0
+Time: 5.333875894546509
+Fitness: 43
+
+Game Over! Game: 186 - ID: 133
+Score: 43
+Bonus: 3.0
+Time: 5.075591087341309
+Fitness: 46.0
+
+Game Over! Game: 187 - ID: 111
+Score: 844
+Bonus: 14.75
+Time: 70.10706210136414
+Fitness: 858.75
+
+Game Over! Game: 188 - ID: 109
+Score: 560
+Bonus: 9.75
+Time: 50.30194282531738
+Fitness: 569.75
+
+Game Over! Game: 189 - ID: 134
+Score: 18
+Bonus: 6.0
+Time: 30.879528284072876
+Fitness: 24.0
+
+Game Over! Game: 190 - ID: 135
+Score: 15667
+Bonus: 224.75
+Time: 832.7986149787903
+Fitness: 15891.75
+
+Game Over! Game: 191 - ID: 136
+Score: 43
+Bonus: 0.25
+Time: 4.918069124221802
+Fitness: 43.25
+
+Game Over! Game: 192 - ID: 137
+Score: 3084
+Bonus: 47.25
+Time: 189.85811805725098
+Fitness: 3131.25
+
+Game Over! Game: 193 - ID: 138
+Score: 560
+Bonus: 0
+Time: 50.10957884788513
+Fitness: 560
+
+Game Over! Game: 194 - ID: 139
+Score: 45
+Bonus: 0
+Time: 5.093950033187866
+Fitness: 45
+
+Game Over! Game: 195 - ID: 140
+Score: 245
+Bonus: 4.75
+Time: 24.811368227005005
+Fitness: 249.75
+
+Game Over! Game: 196 - ID: 141
+Score: 620
+Bonus: 0
+Time: 54.536795139312744
+Fitness: 620
+
+Game Over! Game: 197 - ID: 142
+Score: 18
+Bonus: 5.0
+Time: 18.49286723136902
+Fitness: 23.0
+
+Game Over! Game: 198 - ID: 143
+Score: 43
+Bonus: 0
+Time: 2.148496150970459
+Fitness: 43
+
+Game Over! Game: 198 - ID: 143
+Score: 43
+Bonus: 0
+Time: 3.2114319801330566
+Fitness: 43
+
+Game Over! Game: 199 - ID: 144
+Score: 43
+Bonus: 1.0
+Time: 5.08573579788208
+Fitness: 44.0
+
+Game Over! Game: 200 - ID: 145
+Score: 415
+Bonus: 9.0
+Time: 39.148667097091675
+Fitness: 424.0
+
+Game Over! Game: 201 - ID: 146
+Score: 43
+Bonus: 0
+Time: 5.266200065612793
+Fitness: 43
+
+Game Over! Game: 202 - ID: 147
+Score: 18
+Bonus: 0.75
+Time: 7.567009687423706
+Fitness: 18.75
+
+Game Over! Game: 203 - ID: 135
+Score: 449
+Bonus: 8.0
+Time: 42.35743713378906
+Fitness: 457.0
+
+Game Over! Game: 204 - ID: 137
+Score: 7580
+Bonus: 111.75
+Time: 420.3907458782196
+Fitness: 7691.75
+
+Game Over! Game: 205 - ID: 148
+Score: 1186
+Bonus: 0.5
+Time: 91.19138813018799
+Fitness: 1186.5
+
+Game Over! Game: 206 - ID: 149
+Score: 698
+Bonus: 0
+Time: 60.024242877960205
+Fitness: 698
+
+Game Over! Game: 207 - ID: 150
+Score: 1271
+Bonus: 23.0
+Time: 96.07320785522461
+Fitness: 1294.0
+
+Game Over! Game: 208 - ID: 151
+Score: 56
+Bonus: 1.0
+Time: 6.702412128448486
+Fitness: 57.0
+
+Game Over! Game: 209 - ID: 152
+Score: 1362
+Bonus: 23.5
+Time: 101.15763521194458
+Fitness: 1385.5
+
+Game Over! Game: 210 - ID: 153
+Score: 7047
+Bonus: 106.25
+Time: 393.07483196258545
+Fitness: 7153.25
+
+Game Over! Game: 211 - ID: 154
+Score: 812
+Bonus: 1.5
+Time: 67.8475410938263
+Fitness: 813.5
+
+Game Over! Game: 212 - ID: 155
+Score: 43
+Bonus: 0
+Time: 5.22088885307312
+Fitness: 43
+
+Game Over! Game: 213 - ID: 156
+Score: 43
+Bonus: 0
+Time: 5.219815015792847
+Fitness: 43
+
+Game Over! Game: 214 - ID: 157
+Score: 45
+Bonus: 0
+Time: 5.104758024215698
+Fitness: 45
+
+Game Over! Game: 215 - ID: 158
+Score: 2723
+Bonus: 40.75
+Time: 171.31837725639343
+Fitness: 2763.75
+
+Game Over! Game: 216 - ID: 131
+Score: 1398
+Bonus: 23.75
+Time: 103.21294617652893
+Fitness: 1421.75
+
+Game Over! Game: 217 - ID: 123
+Score: 483
+Bonus: 0
+Time: 44.32610034942627
+Fitness: 483
+
+Game Over! Game: 218 - ID: 159
+Score: 265
+Bonus: 6.25
+Time: 26.547244787216187
+Fitness: 271.25
+
+Game Over! Game: 219 - ID: 160
+Score: 43
+Bonus: 6.5
+Time: 7.451652765274048
+Fitness: 49.5
+
+Game Over! Game: 220 - ID: 161
+Score: 1315
+Bonus: 20.0
+Time: 98.3712329864502
+Fitness: 1335.0
+
+Game Over! Game: 221 - ID: 162
+Score: 43
+Bonus: 3.75
+Time: 7.477131128311157
+Fitness: 46.75
+
+Game Over! Game: 222 - ID: 163
+Score: 4
+Bonus: 212.5
+Time: 810.935417175293
+Fitness: 216.5
+
+Game Over! Game: 223 - ID: 164
+Score: 8955
+Bonus: 141.0
+Time: 489.9661569595337
+Fitness: 9096.0
+
+Game Over! Game: 224 - ID: 165
+Score: 23557
+Bonus: 339.75
+Time: 1239.8598601818085
+Fitness: 23896.75
+
+Game Over! Game: 225 - ID: 166
+Score: 43
+Bonus: 0.25
+Time: 5.1707189083099365
+Fitness: 43.25
+
+Game Over! Game: 226 - ID: 167
+Score: 43
+Bonus: 6.5
+Time: 7.435943365097046
+Fitness: 49.5
+
+Game Over! Game: 227 - ID: 168
+Score: 43
+Bonus: 0
+Time: 5.273427248001099
+Fitness: 43
+
+Game Over! Game: 228 - ID: 152
+Score: 1870
+Bonus: 30.25
+Time: 128.15237188339233
+Fitness: 1900.25
+
+Game Over! Game: 229 - ID: 150
+Score: 1658
+Bonus: 27.25
+Time: 116.77989792823792
+Fitness: 1685.25
+
+Game Over! Game: 230 - ID: 169
+Score: 51
+Bonus: 3.0
+Time: 6.0851500034332275
+Fitness: 54.0
+
+Game Over! Game: 231 - ID: 170
+Score: 508
+Bonus: 10.0
+Time: 46.36529898643494
+Fitness: 518.0
+
+Game Over! Game: 232 - ID: 171
+Score: 495
+Bonus: 9.25
+Time: 45.38641381263733
+Fitness: 504.25
+
+Game Over! Game: 233 - ID: 172
+Score: 36396
+Bonus: 516.75
+Time: 1898.4803700447083
+Fitness: 36912.75
+
+Game Over! Game: 234 - ID: 165
+Score: 981
+Bonus: 17.25
+Time: 78.84240198135376
+Fitness: 998.25
+
+Game Over! Game: 235 - ID: 164
+Score: 18
+Bonus: 2.5
+Time: 11.616391897201538
+Fitness: 20.5
+
+Game Over! Game: 236 - ID: 173
+Score: 65
+Bonus: 0.5
+Time: 4.808020114898682
+Fitness: 65.5
+
+Game Over! Game: 237 - ID: 174
+Score: 18
+Bonus: 1.0
+Time: 7.58777117729187
+Fitness: 19.0
+
+Game Over! Game: 238 - ID: 175
+Score: 1142
+Bonus: 18.75
+Time: 85.61665797233582
+Fitness: 1160.75
+
+Game Over! Game: 239 - ID: 176
+Score: 1693
+Bonus: 27.25
+Time: 118.78032302856445
+Fitness: 1720.25
+
+Game Over! Game: 240 - ID: 177
+Score: 444
+Bonus: 7.5
+Time: 41.48092865943909
+Fitness: 451.5
+
+Game Over! Game: 241 - ID: 178
+Score: 42
+Bonus: 6.5
+Time: 7.462888956069946
+Fitness: 48.5
+
+Game Over! Game: 242 - ID: 179
+Score: 67
+Bonus: 0.75
+Time: 7.7985639572143555
+Fitness: 67.75
+
+Game Over! Game: 243 - ID: 180
+Score: 519
+Bonus: 0
+Time: 47.10798001289368
+Fitness: 519
+
+Game Over! Game: 244 - ID: 181
+Score: 43
+Bonus: 1.0
+Time: 5.159055233001709
+Fitness: 44.0
+
+Game Over! Game: 245 - ID: 182
+Score: 42
+Bonus: 3.75
+Time: 7.437716960906982
+Fitness: 45.75
+
+Game Over! Game: 246 - ID: 183
+Score: 43
+Bonus: 0.25
+Time: 4.868105173110962
+Fitness: 43.25
+
+Game Over! Game: 247 - ID: 184
+Score: 575
+Bonus: 1.75
+Time: 51.233911991119385
+Fitness: 576.75
+
+Game Over! Game: 248 - ID: 185
+Score: 547
+Bonus: 0
+Time: 49.22477698326111
+Fitness: 547
+
+Game Over! Game: 249 - ID: 186
+Score: 640
+Bonus: 11.25
+Time: 55.98400807380676
+Fitness: 651.25
+
+Game Over! Game: 250 - ID: 187
+Score: 1129
+Bonus: 18.75
+Time: 87.58290100097656
+Fitness: 1147.75
+
+Game Over! Game: 251 - ID: 188
+Score: 1641
+Bonus: 26.0
+Time: 115.83138394355774
+Fitness: 1667.0
+
+Game Over! Game: 252 - ID: 189
+Score: 42
+Bonus: 6.0
+Time: 5.069062948226929
+Fitness: 48.0
+
+Game Over! Game: 253 - ID: 165
+Score: 3038
+Bonus: 46.25
+Time: 187.98677802085876
+Fitness: 3084.25
+
+Game Over! Game: 254 - ID: 186
+Score: 488
+Bonus: 8.75
+Time: 44.83976602554321
+Fitness: 496.75
+
+Game Over! Game: 255 - ID: 190
+Score: 43
+Bonus: 6.0
+Time: 5.082880020141602
+Fitness: 49.0
+
+Game Over! Game: 256 - ID: 191
+Score: 43
+Bonus: 6.0
+Time: 5.0591881275177
+Fitness: 49.0
+
+Game Over! Game: 257 - ID: 192
+Score: 941
+Bonus: 0
+Time: 76.36789202690125
+Fitness: 941
+
+Game Over! Game: 258 - ID: 193
+Score: 43
+Bonus: 3.5
+Time: 7.328481912612915
+Fitness: 46.5
+
+Game Over! Game: 259 - ID: 194
+Score: 3024
+Bonus: 47.75
+Time: 186.97922611236572
+Fitness: 3071.75
+
+Game Over! Game: 260 - ID: 172
+Score: 12417
+Bonus: 175.0
+Time: 669.095235824585
+Fitness: 12592.0
+
+Game Over! Game: 261 - ID: 152
+Score: 1170
+Bonus: 19.0
+Time: 90.28968906402588
+Fitness: 1189.0
+
+Game Over! Game: 262 - ID: 195
+Score: 18
+Bonus: 8.25
+Time: 38.69820022583008
+Fitness: 26.25
+
+Game Over! Game: 263 - ID: 196
+Score: 54
+Bonus: 0
+Time: 3.33516001701355
+Fitness: 54
+
+Game Over! Game: 264 - ID: 197
+Score: 574
+Bonus: 10.75
+Time: 51.1322340965271
+Fitness: 584.75
+
+Game Over! Game: 265 - ID: 198
+Score: 1025
+Bonus: 14.25
+Time: 81.32496523857117
+Fitness: 1039.25
+
+Game Over! Game: 266 - ID: 199
+Score: 18
+Bonus: 2.75
+Time: 16.472159147262573
+Fitness: 20.75
+
+Game Over! Game: 267 - ID: 200
+Score: 894
+Bonus: 5.5
+Time: 70.43142700195312
+Fitness: 899.5
+
+Game Over! Game: 268 - ID: 201
+Score: 11875
+Bonus: 210.5
+Time: 640.9445009231567
+Fitness: 12085.5
+
+Game Over! Game: 269 - ID: 202
+Score: 18873
+Bonus: 321.75
+Time: 999.7976717948914
+Fitness: 19194.75
+
+Game Over! Game: 270 - ID: 203
+Score: 501
+Bonus: 0
+Time: 45.79094076156616
+Fitness: 501
+
+Game Over! Game: 271 - ID: 204
+Score: 43
+Bonus: 0
+Time: 5.331056118011475
+Fitness: 43
+
+Game Over! Game: 272 - ID: 205
+Score: 74
+Bonus: 1.0
+Time: 8.408570051193237
+Fitness: 75.0
+
+Game Over! Game: 273 - ID: 206
+Score: 503
+Bonus: 9.0
+Time: 46.02611041069031
+Fitness: 512.0
+
+Game Over! Game: 274 - ID: 207
+Score: 458
+Bonus: 0
+Time: 42.33501410484314
+Fitness: 458
+
+Game Over! Game: 275 - ID: 208
+Score: 692
+Bonus: 11.75
+Time: 59.59461808204651
+Fitness: 703.75
+
+Game Over! Game: 276 - ID: 209
+Score: 43
+Bonus: 6.5
+Time: 7.478867053985596
+Fitness: 49.5
+
+Game Over! Game: 277 - ID: 210
+Score: 43
+Bonus: 3.75
+Time: 7.4451329708099365
+Fitness: 46.75
+
+Game Over! Game: 278 - ID: 165
+Score: 13000
+Bonus: 186.75
+Time: 698.7142541408539
+Fitness: 13186.75
+
+Game Over! Game: 279 - ID: 194
+Score: 559
+Bonus: 10.75
+Time: 50.6333909034729
+Fitness: 569.75
+
+Game Over! Game: 280 - ID: 211
+Score: 4
+Bonus: 282.75
+Time: 1017.6293947696686
+Fitness: 286.75
+
+Game Over! Game: 281 - ID: 212
+Score: 79
+Bonus: 1.0
+Time: 7.918988943099976
+Fitness: 80.0
+
+Game Over! Game: 282 - ID: 213
+Score: 539
+Bonus: 2.5
+Time: 48.622299671173096
+Fitness: 541.5
+
+Game Over! Game: 283 - ID: 214
+Score: 43
+Bonus: 0
+Time: 5.194292306900024
+Fitness: 43
+
+Game Over! Game: 284 - ID: 215
+Score: 1093
+Bonus: 0
+Time: 85.49188995361328
+Fitness: 1093
+
+Game Over! Game: 285 - ID: 202
+Score: 35412
+Bonus: 610.75
+Time: 1847.8713791370392
+Fitness: 36022.75
+
+Game Over! Game: 286 - ID: 172
+Score: 783
+Bonus: 14.25
+Time: 66.03229999542236
+Fitness: 797.25
+
+Game Over! Game: 287 - ID: 216
+Score: 43
+Bonus: 6.5
+Time: 7.44969916343689
+Fitness: 49.5
+
+Game Over! Game: 288 - ID: 217
+Score: 1200
+Bonus: 20.5
+Time: 92.03277111053467
+Fitness: 1220.5
+
+Game Over! Game: 289 - ID: 218
+Score: 2084
+Bonus: 33.0
+Time: 138.8604700565338
+Fitness: 2117.0
+
+Game Over! Game: 290 - ID: 219
+Score: 43
+Bonus: 6.5
+Time: 7.450808048248291
+Fitness: 49.5
+
+Game Over! Game: 291 - ID: 220
+Score: 43
+Bonus: 0.25
+Time: 4.851547002792358
+Fitness: 43.25
+
+Game Over! Game: 292 - ID: 221
+Score: 2744
+Bonus: 53.0
+Time: 172.7942111492157
+Fitness: 2797.0
+
+Game Over! Game: 293 - ID: 222
+Score: 663
+Bonus: 0
+Time: 57.571351051330566
+Fitness: 663
+
+Game Over! Game: 294 - ID: 223
+Score: 43
+Bonus: 0
+Time: 4.876706123352051
+Fitness: 43
+
+Game Over! Game: 295 - ID: 224
+Score: 18
+Bonus: 149.25
+Time: 354.71624517440796
+Fitness: 167.25
+
+Game Over! Game: 296 - ID: 225
+Score: 43
+Bonus: 0.25
+Time: 2.1623008251190186
+Fitness: 43.25
+
+Game Over! Game: 296 - ID: 225
+Score: 43
+Bonus: 0.25
+Time: 3.215859889984131
+Fitness: 43.25
+
+Game Over! Game: 297 - ID: 226
+Score: 18
+Bonus: 4.75
+Time: 12.941892862319946
+Fitness: 22.75
+
+Game Over! Game: 298 - ID: 227
+Score: 895
+Bonus: 14.0
+Time: 70.76535677909851
+Fitness: 909.0
+
+Game Over! Game: 299 - ID: 228
+Score: 18782
+Bonus: 403.75
+Time: 995.3685200214386
+Fitness: 19185.75
+
+Game Over! Game: 300 - ID: 229
+Score: 38347
+Bonus: 539.0
+Time: 1998.422290802002
+Fitness: 38886.0
+
+Game Over! Game: 301 - ID: 230
+Score: 51
+Bonus: 0.5
+Time: 6.113715887069702
+Fitness: 51.5
+
+Game Over! Game: 302 - ID: 231
+Score: 18
+Bonus: 1.25
+Time: 9.500793933868408
+Fitness: 19.25
+
+Game Over! Game: 303 - ID: 165
+Score: 1573
+Bonus: 25.5
+Time: 112.86017107963562
+Fitness: 1598.5
+
+Game Over! Game: 304 - ID: 215
+Score: 373
+Bonus: 0
+Time: 35.535929918289185
+Fitness: 373
+
+Game Over! Game: 305 - ID: 232
+Score: 550
+Bonus: 0
+Time: 49.37405800819397
+Fitness: 550
+
+Game Over! Game: 306 - ID: 233
+Score: 1042
+Bonus: 0
+Time: 82.44501209259033
+Fitness: 1042
+
+Game Over! Game: 307 - ID: 234
+Score: 18
+Bonus: 3.5
+Time: 7.480309009552002
+Fitness: 21.5
+
+Game Over! Game: 308 - ID: 235
+Score: 610
+Bonus: 0
+Time: 51.086660861968994
+Fitness: 610
+
+Game Over! Game: 309 - ID: 236
+Score: 43
+Bonus: 1.0
+Time: 5.1738121509552
+Fitness: 44.0
+
+Game Over! Game: 310 - ID: 229
+Score: 50688
+Bonus: 714.5
+Time: 2631.3071751594543
+Fitness: 51402.5
+
+Game Over! Game: 311 - ID: 202
+Score: 776
+Bonus: 14.5
+Time: 65.54468703269958
+Fitness: 790.5
+
+Game Over! Game: 312 - ID: 237
+Score: 18
+Bonus: 1.0
+Time: 7.4665210247039795
+Fitness: 19.0
+
+Game Over! Game: 313 - ID: 238
+Score: 12232
+Bonus: 252.0
+Time: 656.3948328495026
+Fitness: 12484.0
+
+Game Over! Game: 314 - ID: 239
+Score: 43
+Bonus: 6.5
+Time: 7.413002014160156
+Fitness: 49.5
+
+Game Over! Game: 315 - ID: 240
+Score: 719
+Bonus: 10.0
+Time: 61.52782487869263
+Fitness: 729.0
+
+Game Over! Game: 316 - ID: 241
+Score: 70
+Bonus: 0.75
+Time: 8.037328004837036
+Fitness: 70.75
+
+Game Over! Game: 317 - ID: 242
+Score: 633
+Bonus: 5.25
+Time: 55.45417499542236
+Fitness: 638.25
+
+Game Over! Game: 318 - ID: 243
+Score: 873
+Bonus: 11.75
+Time: 71.82016587257385
+Fitness: 884.75
+
+Game Over! Game: 319 - ID: 244
+Score: 759
+Bonus: 12.5
+Time: 64.42756700515747
+Fitness: 771.5
+
+Game Over! Game: 320 - ID: 245
+Score: 43
+Bonus: 0
+Time: 4.891739845275879
+Fitness: 43
+
+Game Over! Game: 321 - ID: 246
+Score: 43
+Bonus: 0
+Time: 5.223103046417236
+Fitness: 43
+
+Game Over! Game: 322 - ID: 247
+Score: 43
+Bonus: 6.5
+Time: 7.430330753326416
+Fitness: 49.5
+
+Game Over! Game: 323 - ID: 248
+Score: 775
+Bonus: 0
+Time: 65.35317492485046
+Fitness: 775
+
+Game Over! Game: 324 - ID: 249
+Score: 813
+Bonus: 13.0
+Time: 67.9537947177887
+Fitness: 826.0
+
+Game Over! Game: 325 - ID: 250
+Score: 53
+Bonus: 1.0
+Time: 6.211425065994263
+Fitness: 54.0
+
+Game Over! Game: 326 - ID: 251
+Score: 59
+Bonus: 0.75
+Time: 6.893617868423462
+Fitness: 59.75
+
+Game Over! Game: 327 - ID: 252
+Score: 43
+Bonus: 0
+Time: 5.2135169506073
+Fitness: 43
+
+Game Over! Game: 328 - ID: 249
+Score: 974
+Bonus: 15.5
+Time: 78.70678496360779
+Fitness: 989.5
+
+Game Over! Game: 329 - ID: 244
+Score: 4452
+Bonus: 66.0
+Time: 260.2688822746277
+Fitness: 4518.0
+
+Game Over! Game: 330 - ID: 253
+Score: 1635
+Bonus: 25.75
+Time: 115.92642092704773
+Fitness: 1660.75
+
+Game Over! Game: 331 - ID: 254
+Score: 486
+Bonus: 7.5
+Time: 44.58181715011597
+Fitness: 493.5
+
+Game Over! Game: 332 - ID: 255
+Score: 959
+Bonus: 15.75
+Time: 77.53389310836792
+Fitness: 974.75
+
+Game Over! Game: 333 - ID: 165
+Score: 3948
+Bonus: 61.5
+Time: 234.93659090995789
+Fitness: 4009.5
+
+Game Over! Game: 334 - ID: 233
+Score: 1084
+Bonus: 0
+Time: 84.9405779838562
+Fitness: 1084
+
+Game Over! Game: 335 - ID: 256
+Score: 257
+Bonus: 0
+Time: 25.637981176376343
+Fitness: 257
+
+Game Over! Game: 336 - ID: 257
+Score: 477
+Bonus: 9.5
+Time: 44.03334021568298
+Fitness: 486.5
+
+Game Over! Game: 337 - ID: 258
+Score: 43
+Bonus: 0
+Time: 4.9163970947265625
+Fitness: 43
+
+Game Over! Game: 338 - ID: 229
+Score: 18856
+Bonus: 771.25
+Time: 2836.393189907074
+Fitness: 19627.25
+
+Game Over! Game: 339 - ID: 238
+Score: 980
+Bonus: 18.25
+Time: 78.74993634223938
+Fitness: 998.25
+
+Game Over! Game: 340 - ID: 259
+Score: 18
+Bonus: 1.25
+Time: 7.5580432415008545
+Fitness: 19.25
+
+Game Over! Game: 341 - ID: 260
+Score: 58
+Bonus: 0
+Time: 4.149003982543945
+Fitness: 58
+
+Game Over! Game: 342 - ID: 261
+Score: 526
+Bonus: 9.0
+Time: 47.588582277297974
+Fitness: 535.0
+
+Game Over! Game: 343 - ID: 262
+Score: 18
+Bonus: 0.75
+Time: 8.342093706130981
+Fitness: 18.75
+
+Game Over! Game: 344 - ID: 263
+Score: 43
+Bonus: 2.0
+Time: 4.709047079086304
+Fitness: 45.0
+
+Game Over! Game: 345 - ID: 264
+Score: 524
+Bonus: 0
+Time: 47.43187403678894
+Fitness: 524
+
+Game Over! Game: 346 - ID: 265
+Score: 64
+Bonus: 0
+Time: 7.14493203163147
+Fitness: 64
+
+Game Over! Game: 347 - ID: 266
+Score: 663
+Bonus: 0
+Time: 57.643165826797485
+Fitness: 663
+
+Game Over! Game: 348 - ID: 267
+Score: 43
+Bonus: 0.25
+Time: 4.912834882736206
+Fitness: 43.25
+
+Game Over! Game: 349 - ID: 268
+Score: 43
+Bonus: 0.5
+Time: 5.298731803894043
+Fitness: 43.5
+
+Game Over! Game: 350 - ID: 269
+Score: 43
+Bonus: 0.75
+Time: 5.19854998588562
+Fitness: 43.75
+
+Game Over! Game: 351 - ID: 270
+Score: 43
+Bonus: 3.25
+Time: 5.087856769561768
+Fitness: 46.25
+
+Game Over! Game: 352 - ID: 271
+Score: 18
+Bonus: 1.5
+Time: 7.445348739624023
+Fitness: 19.5
+
+Game Over! Game: 353 - ID: 165
+Score: 12910
+Bonus: 185.5
+Time: 694.4359242916107
+Fitness: 13095.5
+
+Game Over! Game: 354 - ID: 233
+Score: 481
+Bonus: 0
+Time: 44.16732478141785
+Fitness: 481
+
+Game Over! Game: 355 - ID: 272
+Score: 18
+Bonus: 3.0
+Time: 7.4239959716796875
+Fitness: 21.0
+
+Game Over! Game: 356 - ID: 273
+Score: 18
+Bonus: 1.5
+Time: 4.883087158203125
+Fitness: 19.5
+
+Game Over! Game: 357 - ID: 274
+Score: 43
+Bonus: 0.75
+Time: 4.554301023483276
+Fitness: 43.75
+
+Game Over! Game: 358 - ID: 275
+Score: 1630
+Bonus: 0.5
+Time: 115.26978611946106
+Fitness: 1630.5
+
+Game Over! Game: 359 - ID: 276
+Score: 496
+Bonus: 0
+Time: 45.296255111694336
+Fitness: 496
+
+Game Over! Game: 360 - ID: 229
+Score: 14437
+Bonus: 210.75
+Time: 772.219367980957
+Fitness: 14647.75
+
+Game Over! Game: 361 - ID: 244
+Score: 2098
+Bonus: 32.25
+Time: 139.56789684295654
+Fitness: 2130.25
+
+Game Over! Game: 362 - ID: 277
+Score: 280
+Bonus: 2.0
+Time: 27.618191957473755
+Fitness: 282.0
+
+Game Over! Game: 363 - ID: 278
+Score: 18
+Bonus: 0.75
+Time: 7.5475687980651855
+Fitness: 18.75
+
+Game Over! Game: 364 - ID: 279
+Score: 6760
+Bonus: 98.5
+Time: 375.89116621017456
+Fitness: 6858.5
+
+Game Over! Game: 365 - ID: 280
+Score: 43
+Bonus: 0
+Time: 5.193356037139893
+Fitness: 43
+
+Game Over! Game: 366 - ID: 281
+Score: 899
+Bonus: 15.5
+Time: 73.40954399108887
+Fitness: 914.5
+
+Game Over! Game: 367 - ID: 282
+Score: 5146
+Bonus: 88.25
+Time: 295.94270181655884
+Fitness: 5234.25
+
+Game Over! Game: 368 - ID: 283
+Score: 69
+Bonus: 0.25
+Time: 8.054088830947876
+Fitness: 69.25
+
+Game Over! Game: 369 - ID: 284
+Score: 44
+Bonus: 0.25
+Time: 5.0382080078125
+Fitness: 44.25
+
+Game Over! Game: 370 - ID: 285
+Score: 280
+Bonus: 0
+Time: 27.591291189193726
+Fitness: 280
+
+Game Over! Game: 371 - ID: 286
+Score: 18
+Bonus: 0.75
+Time: 7.55694580078125
+Fitness: 18.75
+
+Game Over! Game: 372 - ID: 287
+Score: 550
+Bonus: 12.5
+Time: 46.962379932403564
+Fitness: 562.5
+
+Game Over! Game: 373 - ID: 288
+Score: 639
+Bonus: 9.75
+Time: 55.942370891571045
+Fitness: 648.75
+
+Game Over! Game: 374 - ID: 289
+Score: 36670
+Bonus: 744.25
+Time: 1912.601089000702
+Fitness: 37414.25
+
+Game Over! Game: 375 - ID: 290
+Score: 42
+Bonus: 3.75
+Time: 7.4503397941589355
+Fitness: 45.75
+
+Game Over! Game: 376 - ID: 291
+Score: 43
+Bonus: 0
+Time: 5.337526082992554
+Fitness: 43
+
+Game Over! Game: 377 - ID: 292
+Score: 1013
+Bonus: 0
+Time: 80.62811279296875
+Fitness: 1013
+
+Game Over! Game: 378 - ID: 165
+Score: 55959
+Bonus: 793.25
+Time: 2901.477045059204
+Fitness: 56752.25
+
+Game Over! Game: 379 - ID: 275
+Score: 678
+Bonus: 0
+Time: 58.651965856552124
+Fitness: 678
+
+Game Over! Game: 380 - ID: 293
+Score: 43
+Bonus: 0
+Time: 5.191164016723633
+Fitness: 43
+
+Game Over! Game: 381 - ID: 294
+Score: 307
+Bonus: 5.5
+Time: 30.13530206680298
+Fitness: 312.5
+
+Game Over! Game: 382 - ID: 295
+Score: 43
+Bonus: 0
+Time: 4.918892860412598
+Fitness: 43
+
+Game Over! Game: 383 - ID: 296
+Score: 43
+Bonus: 0
+Time: 5.220138072967529
+Fitness: 43
+
+Game Over! Game: 384 - ID: 297
+Score: 43
+Bonus: 1.25
+Time: 7.337200164794922
+Fitness: 44.25
+
+Game Over! Game: 385 - ID: 298
+Score: 835
+Bonus: 0
+Time: 69.31166005134583
+Fitness: 835
+
+Game Over! Game: 386 - ID: 289
+Score: 636
+Bonus: 11.25
+Time: 55.816936016082764
+Fitness: 647.25
+
+Game Over! Game: 387 - ID: 229
+Score: 763
+Bonus: 13.25
+Time: 64.53912401199341
+Fitness: 776.25
+
+Game Over! Game: 388 - ID: 299
+Score: 89
+Bonus: 0.75
+Time: 10.014810800552368
+Fitness: 89.75
+
+Game Over! Game: 389 - ID: 300
+Score: 184
+Bonus: 0
+Time: 18.95129680633545
+Fitness: 184
+
+Game Over! Game: 390 - ID: 301
+Score: 43
+Bonus: 0.5
+Time: 5.023952007293701
+Fitness: 43.5
+
+Game Over! Game: 391 - ID: 302
+Score: 43
+Bonus: 0
+Time: 5.345262050628662
+Fitness: 43
+
+Game Over! Game: 392 - ID: 303
+Score: 251
+Bonus: 0
+Time: 25.0584237575531
+Fitness: 251
+
+Game Over! Game: 393 - ID: 304
+Score: 18
+Bonus: 0.75
+Time: 7.569049119949341
+Fitness: 18.75
+
+Game Over! Game: 394 - ID: 305
+Score: 224
+Bonus: 0
+Time: 19.894036769866943
+Fitness: 224
+
+Game Over! Game: 395 - ID: 306
+Score: 43
+Bonus: 0.25
+Time: 4.909425258636475
+Fitness: 43.25
+
+Game Over! Game: 396 - ID: 307
+Score: 2250
+Bonus: 34.5
+Time: 147.35040402412415
+Fitness: 2284.5
+
+Game Over! Game: 397 - ID: 308
+Score: 7939
+Bonus: 122.75
+Time: 439.00795793533325
+Fitness: 8061.75
+
+Game Over! Game: 398 - ID: 309
+Score: 18
+Bonus: 1.5
+Time: 7.43613076210022
+Fitness: 19.5
+
+Game Over! Game: 399 - ID: 310
+Score: 364
+Bonus: 0
+Time: 32.06471657752991
+Fitness: 364
+
+Game Over! Game: 400 - ID: 311
+Score: 18061
+Bonus: 275.75
+Time: 957.8702800273895
+Fitness: 18336.75
+
+Game Over! Game: 401 - ID: 312
+Score: 57857
+Bonus: 986.25
+Time: 2998.7771289348602
+Fitness: 58843.25
+
+Game Over! Game: 402 - ID: 313
+Score: 744
+Bonus: 12.0
+Time: 63.18218779563904
+Fitness: 756.0
+
+Game Over! Game: 403 - ID: 308
+Score: 17584
+Bonus: 253.0
+Time: 934.1480960845947
+Fitness: 17837.0
+
+Game Over! Game: 404 - ID: 229
+Score: 38355
+Bonus: 543.25
+Time: 1998.750561952591
+Fitness: 38898.25
+
+Game Over! Game: 405 - ID: 314
+Score: 696
+Bonus: 11.5
+Time: 59.895270347595215
+Fitness: 707.5
+
+Game Over! Game: 406 - ID: 315
+Score: 18
+Bonus: 2.5
+Time: 10.879507303237915
+Fitness: 20.5
+
+Game Over! Game: 407 - ID: 165
+Score: 17502
+Bonus: 253.0
+Time: 926.686830997467
+Fitness: 17755.0
+
+Game Over! Game: 408 - ID: 298
+Score: 510
+Bonus: 0
+Time: 46.402283906936646
+Fitness: 510
+
+Game Over! Game: 409 - ID: 316
+Score: 495
+Bonus: 0
+Time: 45.225847005844116
+Fitness: 495
+
+Game Over! Game: 410 - ID: 317
+Score: 18
+Bonus: 1.25
+Time: 7.571746826171875
+Fitness: 19.25
+
+Game Over! Game: 411 - ID: 318
+Score: 18
+Bonus: 1.75
+Time: 4.737698793411255
+Fitness: 19.75
+
+Game Over! Game: 412 - ID: 319
+Score: 538
+Bonus: 0
+Time: 45.77445101737976
+Fitness: 538
+
+Game Over! Game: 413 - ID: 320
+Score: 43
+Bonus: 6.5
+Time: 7.445547103881836
+Fitness: 49.5
+
+Game Over! Game: 414 - ID: 321
+Score: 43
+Bonus: 1.25
+Time: 7.3667051792144775
+Fitness: 44.25
+
+Game Over! Game: 415 - ID: 322
+Score: 43
+Bonus: 3.0
+Time: 5.275771856307983
+Fitness: 46.0
+
+Game Over! Game: 416 - ID: 323
+Score: 562
+Bonus: 0
+Time: 50.29877805709839
+Fitness: 562
+
+Game Over! Game: 417 - ID: 312
+Score: 14426
+Bonus: 235.75
+Time: 771.7505240440369
+Fitness: 14661.75
+
+Game Over! Game: 418 - ID: 311
+Score: 77372
+Bonus: 1128.5
+Time: 3999.2723021507263
+Fitness: 78500.5
+
+Game Over! Game: 419 - ID: 324
+Score: 207
+Bonus: 4.75
+Time: 21.31688904762268
+Fitness: 211.75
+
+Game Over! Game: 420 - ID: 325
+Score: 971
+Bonus: 0
+Time: 78.05724787712097
+Fitness: 971
+
+Game Over! Game: 421 - ID: 326
+Score: 43
+Bonus: 6.25
+Time: 5.102376222610474
+Fitness: 49.25
+
+Game Over! Game: 422 - ID: 327
+Score: 733
+Bonus: 0
+Time: 62.49160981178284
+Fitness: 733
+
+Game Over! Game: 423 - ID: 328
+Score: 15533
+Bonus: 266.75
+Time: 1330.7714879512787
+Fitness: 15799.75
+
+Game Over! Game: 424 - ID: 328
+Score: 9039
+Bonus: 420.25
+Time: 495.6765921115875
+Fitness: 9459.25
+
+Game Over! Game: 425 - ID: 329
+Score: 43
+Bonus: 0.25
+Time: 4.924632787704468
+Fitness: 43.25
+
+Game Over! Game: 426 - ID: 330
+Score: 1790
+Bonus: 29.75
+Time: 123.46336102485657
+Fitness: 1819.75
+
+Game Over! Game: 427 - ID: 331
+Score: 7206
+Bonus: 129.25
+Time: 401.324481010437
+Fitness: 7335.25
+
+Game Over! Game: 428 - ID: 332
+Score: 43
+Bonus: 0.25
+Time: 4.890775203704834
+Fitness: 43.25
+
+Game Over! Game: 429 - ID: 229
+Score: 8332
+Bonus: 123.25
+Time: 459.49733996391296
+Fitness: 8455.25
+
+Game Over! Game: 430 - ID: 308
+Score: 18865
+Bonus: 283.25
+Time: 999.3661649227142
+Fitness: 19148.25
+
+Game Over! Game: 431 - ID: 333
+Score: 52
+Bonus: 3.25
+Time: 6.1467859745025635
+Fitness: 55.25
+
+Game Over! Game: 432 - ID: 334
+Score: 798
+Bonus: 11.25
+Time: 66.86475419998169
+Fitness: 809.25
+
+Game Over! Game: 433 - ID: 335
+Score: 43
+Bonus: 6.5
+Time: 7.438318967819214
+Fitness: 49.5
+
+Game Over! Game: 434 - ID: 336
+Score: 731
+Bonus: 12.25
+Time: 62.4733190536499
+Fitness: 743.25
+
+Game Over! Game: 435 - ID: 337
+Score: 63
+Bonus: 0.5
+Time: 7.333194971084595
+Fitness: 63.5
+
+Game Over! Game: 436 - ID: 338
+Score: 43
+Bonus: 0
+Time: 5.223296880722046
+Fitness: 43
+
+Game Over! Game: 437 - ID: 339
+Score: 69
+Bonus: 0
+Time: 7.648949146270752
+Fitness: 69
+
+Game Over! Game: 438 - ID: 340
+Score: 15558
+Bonus: 228.75
+Time: 830.0328538417816
+Fitness: 15786.75
+
+Game Over! Game: 439 - ID: 341
+Score: 43
+Bonus: 1.0
+Time: 5.32255482673645
+Fitness: 44.0
+
+Game Over! Game: 440 - ID: 342
+Score: 18
+Bonus: 1.5
+Time: 7.444334268569946
+Fitness: 19.5
+
+Game Over! Game: 441 - ID: 311
+Score: 473
+Bonus: 8.75
+Time: 40.97660422325134
+Fitness: 481.75
+
+Game Over! Game: 442 - ID: 312
+Score: 17757
+Bonus: 307.5
+Time: 942.76837682724
+Fitness: 18064.5
+
+Game Over! Game: 443 - ID: 343
+Score: 43
+Bonus: 3.75
+Time: 7.439165830612183
+Fitness: 46.75
+
+Game Over! Game: 444 - ID: 344
+Score: 950
+Bonus: 16.0
+Time: 76.90889811515808
+Fitness: 966.0
+
+Game Over! Game: 445 - ID: 345
+Score: 52
+Bonus: 0.5
+Time: 6.1727118492126465
+Fitness: 52.5
+
+Game Over! Game: 446 - ID: 346
+Score: 42
+Bonus: 0.25
+Time: 4.859846115112305
+Fitness: 42.25
+
+Game Over! Game: 447 - ID: 347
+Score: 61
+Bonus: 0
+Time: 7.254640102386475
+Fitness: 61
+
+Game Over! Game: 448 - ID: 348
+Score: 43
+Bonus: 3.75
+Time: 7.373223781585693
+Fitness: 46.75
+
+Game Over! Game: 449 - ID: 349
+Score: 568
+Bonus: 8.75
+Time: 50.720694065093994
+Fitness: 576.75
+
+Game Over! Game: 450 - ID: 350
+Score: 43
+Bonus: 1.0
+Time: 5.0902159214019775
+Fitness: 44.0
+
+Game Over! Game: 451 - ID: 351
+Score: 654
+Bonus: 0
+Time: 56.9835319519043
+Fitness: 654
+
+Game Over! Game: 452 - ID: 352
+Score: 1703
+Bonus: 26.25
+Time: 119.2887351512909
+Fitness: 1729.25
+
+Game Over! Game: 453 - ID: 353
+Score: 18
+Bonus: 1.0
+Time: 7.512028217315674
+Fitness: 19.0
+
+Game Over! Game: 454 - ID: 312
+Score: 427
+Bonus: 7.75
+Time: 40.34118604660034
+Fitness: 434.75
+
+Game Over! Game: 455 - ID: 352
+Score: 6220
+Bonus: 92.5
+Time: 350.6309759616852
+Fitness: 6312.5
+
+Game Over! Game: 456 - ID: 354
+Score: 42
+Bonus: 0.25
+Time: 4.873114824295044
+Fitness: 42.25
+
+Game Over! Game: 457 - ID: 355
+Score: 52
+Bonus: 0.5
+Time: 6.250718832015991
+Fitness: 52.5
+
+Game Over! Game: 458 - ID: 356
+Score: 584
+Bonus: 0
+Time: 51.91983699798584
+Fitness: 584
+
+Game Over! Game: 459 - ID: 357
+Score: 5042
+Bonus: 76.5
+Time: 290.51073694229126
+Fitness: 5118.5
+
+Game Over! Game: 460 - ID: 358
+Score: 1664
+Bonus: 37.25
+Time: 117.04225993156433
+Fitness: 1701.25
+
+Game Over! Game: 461 - ID: 359
+Score: 51
+Bonus: 2.5
+Time: 6.196394920349121
+Fitness: 53.5
+
+Game Over! Game: 462 - ID: 360
+Score: 812
+Bonus: 0
+Time: 67.79556894302368
+Fitness: 812
+
+Game Over! Game: 463 - ID: 361
+Score: 43
+Bonus: 6.5
+Time: 7.42337703704834
+Fitness: 49.5
+
+Game Over! Game: 464 - ID: 308
+Score: 12782
+Bonus: 186.0
+Time: 687.6306712627411
+Fitness: 12968.0
+
+Game Over! Game: 465 - ID: 340
+Score: 33127
+Bonus: 483.5
+Time: 1730.4170622825623
+Fitness: 33610.5
+
+Game Over! Game: 466 - ID: 362
+Score: 4584
+Bonus: 76.25
+Time: 267.38710498809814
+Fitness: 4660.25
+
+Game Over! Game: 467 - ID: 363
+Score: 516
+Bonus: 0
+Time: 46.970494985580444
+Fitness: 516
+
+Game Over! Game: 468 - ID: 364
+Score: 554
+Bonus: 0
+Time: 49.72339367866516
+Fitness: 554
+
+Game Over! Game: 469 - ID: 365
+Score: 16943
+Bonus: 334.25
+Time: 901.0443189144135
+Fitness: 17277.25
+
+Game Over! Game: 470 - ID: 366
+Score: 18
+Bonus: 4.75
+Time: 23.99741792678833
+Fitness: 22.75
+
+Game Over! Game: 471 - ID: 367
+Score: 43
+Bonus: 1.0
+Time: 2.2658779621124268
+Fitness: 44.0
+
+Game Over! Game: 471 - ID: 367
+Score: 43
+Bonus: 1.0
+Time: 3.321640968322754
+Fitness: 44.0
+
+Game Over! Game: 472 - ID: 368
+Score: 779
+Bonus: 13.5
+Time: 65.90180087089539
+Fitness: 792.5
+
+Game Over! Game: 473 - ID: 369
+Score: 18
+Bonus: 2.25
+Time: 7.526276111602783
+Fitness: 20.25
+
+Game Over! Game: 474 - ID: 370
+Score: 43
+Bonus: 1.5
+Time: 2.3538460731506348
+Fitness: 44.5
+
+Game Over! Game: 474 - ID: 370
+Score: 43
+Bonus: 1.75
+Time: 3.534024953842163
+Fitness: 44.75
+
+Game Over! Game: 475 - ID: 371
+Score: 632
+Bonus: 0
+Time: 55.41419219970703
+Fitness: 632
+
+Game Over! Game: 476 - ID: 372
+Score: 43
+Bonus: 0
+Time: 4.888276815414429
+Fitness: 43
+
+Game Over! Game: 477 - ID: 373
+Score: 43
+Bonus: 0
+Time: 5.231756687164307
+Fitness: 43
+
+Game Over! Game: 478 - ID: 374
+Score: 18
+Bonus: 1.0
+Time: 8.699686765670776
+Fitness: 19.0
+
+Game Over! Game: 479 - ID: 352
+Score: 12488
+Bonus: 183.25
+Time: 672.3428690433502
+Fitness: 12671.25
+
+Game Over! Game: 480 - ID: 357
+Score: 424
+Bonus: 7.5
+Time: 39.9008150100708
+Fitness: 431.5
+
+Game Over! Game: 481 - ID: 375
+Score: 913
+Bonus: 0
+Time: 74.51499819755554
+Fitness: 913
+
+Game Over! Game: 482 - ID: 376
+Score: 43
+Bonus: 0
+Time: 5.227191925048828
+Fitness: 43
+
+Game Over! Game: 483 - ID: 377
+Score: 3494
+Bonus: 61.75
+Time: 211.11376118659973
+Fitness: 3555.75
+
+Game Over! Game: 484 - ID: 378
+Score: 226
+Bonus: 0
+Time: 22.857366800308228
+Fitness: 226
+
+Game Over! Game: 485 - ID: 379
+Score: 43
+Bonus: 0.25
+Time: 4.863927125930786
+Fitness: 43.25
+
+Game Over! Game: 486 - ID: 380
+Score: 594
+Bonus: 3.5
+Time: 52.64397478103638
+Fitness: 597.5
+
+Game Over! Game: 487 - ID: 340
+Score: 13445
+Bonus: 194.5
+Time: 721.7167928218842
+Fitness: 13639.5
+
+Game Over! Game: 488 - ID: 365
+Score: 5853
+Bonus: 116.0
+Time: 332.03610706329346
+Fitness: 5969.0
+
+Game Over! Game: 489 - ID: 381
+Score: 51
+Bonus: 0.5
+Time: 5.871242046356201
+Fitness: 51.5
+
+Game Over! Game: 490 - ID: 382
+Score: 611
+Bonus: 11.5
+Time: 54.0029559135437
+Fitness: 622.5
+
+Game Over! Game: 491 - ID: 383
+Score: 43
+Bonus: 6.5
+Time: 7.3993799686431885
+Fitness: 49.5
+
+Game Over! Game: 492 - ID: 384
+Score: 18
+Bonus: 1.0
+Time: 7.555566072463989
+Fitness: 19.0
+
+Game Over! Game: 493 - ID: 385
+Score: 10903
+Bonus: 204.0
+Time: 588.1048259735107
+Fitness: 11107.0
+
+Game Over! Game: 494 - ID: 386
+Score: 18856
+Bonus: 351.0
+Time: 998.9099988937378
+Fitness: 19207.0
+
+Game Over! Game: 495 - ID: 387
+Score: 43
+Bonus: 0.25
+Time: 4.918889045715332
+Fitness: 43.25
+
+Game Over! Game: 496 - ID: 388
+Score: 18747
+Bonus: 316.25
+Time: 993.7916169166565
+Fitness: 19063.25
+
+Game Over! Game: 497 - ID: 389
+Score: 43
+Bonus: 1.75
+Time: 7.455561876296997
+Fitness: 44.75
+
+Game Over! Game: 498 - ID: 390
+Score: 478
+Bonus: 7.5
+Time: 43.96294116973877
+Fitness: 485.5
+
+Game Over! Game: 499 - ID: 391
+Score: 687
+Bonus: 10.5
+Time: 59.27786207199097
+Fitness: 697.5
+
+Game Over! Game: 500 - ID: 392
+Score: 52
+Bonus: 0.5
+Time: 6.12770414352417
+Fitness: 52.5
+
+Game Over! Game: 501 - ID: 393
+Score: 1285
+Bonus: 29.5
+Time: 96.63456702232361
+Fitness: 1314.5
+
+Game Over! Game: 502 - ID: 394
+Score: 43
+Bonus: 3.0
+Time: 5.281452178955078
+Fitness: 46.0
+
+Game Over! Game: 503 - ID: 395
+Score: 96
+Bonus: 0
+Time: 10.828378915786743
+Fitness: 96
+
+Game Over! Game: 504 - ID: 340
+Score: 14237
+Bonus: 208.5
+Time: 762.3025462627411
+Fitness: 14445.5
+
+Game Over! Game: 505 - ID: 352
+Score: 1106
+Bonus: 20.0
+Time: 86.20944094657898
+Fitness: 1126.0
+
+Game Over! Game: 506 - ID: 396
+Score: 17167
+Bonus: 273.0
+Time: 912.0992691516876
+Fitness: 17440.0
+
+Game Over! Game: 507 - ID: 397
+Score: 650
+Bonus: 0
+Time: 56.688419818878174
+Fitness: 650
+
+Game Over! Game: 508 - ID: 398
+Score: 18
+Bonus: 1.0
+Time: 8.452796936035156
+Fitness: 19.0
+
+Game Over! Game: 509 - ID: 399
+Score: 17607
+Bonus: 340.25
+Time: 932.400153875351
+Fitness: 17947.25
+
+Game Over! Game: 510 - ID: 400
+Score: 18
+Bonus: 1.25
+Time: 7.500180006027222
+Fitness: 19.25
+
+Game Over! Game: 511 - ID: 401
+Score: 18
+Bonus: 116.75
+Time: 286.15220403671265
+Fitness: 134.75
+
+Game Over! Game: 512 - ID: 402
+Score: 778
+Bonus: 0
+Time: 62.952537059783936
+Fitness: 778
+
+Game Over! Game: 513 - ID: 403
+Score: 206
+Bonus: 0
+Time: 20.970832109451294
+Fitness: 206
+
+Game Over! Game: 514 - ID: 386
+Score: 11430
+Bonus: 216.0
+Time: 618.1961622238159
+Fitness: 11646.0
+
+Game Over! Game: 515 - ID: 388
+Score: 9784
+Bonus: 165.5
+Time: 533.5572640895844
+Fitness: 9949.5
+
+Game Over! Game: 516 - ID: 404
+Score: 190
+Bonus: 0
+Time: 19.53531002998352
+Fitness: 190
+
+Game Over! Game: 517 - ID: 405
+Score: 8029
+Bonus: 117.75
+Time: 444.00792694091797
+Fitness: 8146.75
+
+Game Over! Game: 518 - ID: 406
+Score: 18
+Bonus: 0.75
+Time: 7.492730140686035
+Fitness: 18.75
+
+Game Over! Game: 519 - ID: 407
+Score: 64
+Bonus: 0.75
+Time: 4.763833045959473
+Fitness: 64.75
+
+Game Over! Game: 520 - ID: 408
+Score: 43
+Bonus: 6.5
+Time: 7.435220956802368
+Fitness: 49.5
+
+Game Over! Game: 521 - ID: 409
+Score: 43
+Bonus: 0
+Time: 5.369911193847656
+Fitness: 43
+
+Game Over! Game: 522 - ID: 410
+Score: 57308
+Bonus: 951.5
+Time: 2970.968154668808
+Fitness: 58259.5
+
+Game Over! Game: 523 - ID: 411
+Score: 18
+Bonus: 1.0
+Time: 7.53536581993103
+Fitness: 19.0
+
+Game Over! Game: 524 - ID: 412
+Score: 18
+Bonus: 4.5
+Time: 18.568866968154907
+Fitness: 22.5
+
+Game Over! Game: 525 - ID: 413
+Score: 18367
+Bonus: 296.25
+Time: 971.3609652519226
+Fitness: 18663.25
+
+Game Over! Game: 526 - ID: 414
+Score: 43
+Bonus: 3.0
+Time: 5.110453128814697
+Fitness: 46.0
+
+Game Over! Game: 527 - ID: 415
+Score: 43
+Bonus: 1.5
+Time: 7.380914926528931
+Fitness: 44.5
+
+Game Over! Game: 528 - ID: 416
+Score: 43
+Bonus: 0.75
+Time: 4.950037956237793
+Fitness: 43.75
+

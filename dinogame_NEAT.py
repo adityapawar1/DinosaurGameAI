@@ -421,7 +421,7 @@ def run(config_path):
 
     p = neat.Population(config)
 
-    p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-154')
+    p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-174')
     print('restored population')
 
     p.add_reporter(neat.StdOutReporter(True))
@@ -430,7 +430,7 @@ def run(config_path):
     p.add_reporter(neat.Checkpointer(1, 5))
 
     try:
-        winner = p.run(eval_genomes, 21) # run for up to 100 generations
+        winner = p.run(eval_genomes, 26) # run for up to 100 generations
     except Exception as e:
         print(e)
 
