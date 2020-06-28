@@ -1,5 +1,5 @@
 # DinosaurGameAI
-doesnt work rn cause i forgot to upload images for template matching, sooo ill do that when i feel like it
+go to the OCR branch if you want a training to be less buggy and its just faster overall
 
 This repository uses opencv and NEAT to detect obstacles in the dinosaur game, feeds the information to a NEAT trained neural network to play a clone of Google's dinosaur offline game (http://www.trex-game.skipser.com/) almost flawlessly. 
 
