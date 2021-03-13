@@ -99,6 +99,15 @@ def drawBoundingBoxes(img, points, color):
 
     return img
 
+def getScore(img):
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
+    # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
+    ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
+    score = ocr.get_score(thresh)
+
+    return score
+
 def findDistance(dino_coords, obstacles):
     dino_x = dino_coords[0][1][0]
     dino_mid_y = (dino_coords[0][0][1] + dino_coords[0][1][1]) / 2 # 226 when running
@@ -212,7 +221,7 @@ def calibrate():
             force_gameover = True
 
 def eval_genomes(genomes, config):
-    global frame, ROI, play_toggle, game, score_ROI, generation, max_fitness, winner
+    global frame, ROI, play_toggle, game, score_ROI, generation, max_fitness, winner, gamelog
     print('playing')
     last_dist = 0
     tess_config = ('-l eng --oem 1 --psm 7')
@@ -221,8 +230,8 @@ def eval_genomes(genomes, config):
     score_time = time.time()
     force_gameover = False
     generation += 1
-    fgo_thresh = 350 + generation * 50
-    fgo_thresh = 1800 if fgo_thresh > 1800 else fgo_thresh
+    # fgo_thresh = 350 + generation * 50
+    # fgo_thresh = 1800 if fgo_thresh > 1800 else fgo_thresh
 
     reload()
     print('reloaded page')
@@ -235,17 +244,24 @@ def eval_genomes(genomes, config):
 
         scroll_go = False
         force_gameover = False
+        last_frame = False
+        first = True
         score_time = time.time()
+        scores = []
 
         # start game
         pyautogui.press('up')
         time.sleep(1)
         pyautogui.press('up')
+
         while True:
             # Get raw pixels from the screen, save it to a Numpy array
             try:
+
                 # screen shot
                 img = np.array(sct.grab(monitor))
+                screen = img.copy()
+
 
                 # roi of just obstacles
                 obstacles = img[ROI[0][0]:ROI[0][1], ROI[1][0]:ROI[1][1]]
@@ -277,7 +293,7 @@ def eval_genomes(genomes, config):
                     pyautogui.press('up')
                 elif output[1] >= output[0] and output[1] >= output[2]:
                     pyautogui.press('down')
-                    genome.fitness += 0.5
+                    genome.fitness += 0.25
                     if cac_y > 310:
                         genome.fitness += 150
                 elif output[2] >= output[0] and output[2] >= output[1]:
@@ -308,31 +324,18 @@ def eval_genomes(genomes, config):
                         while score == '' and count < 5:
                             pyautogui.scroll(10, x=690, y=450)
                             img = np.array(sct.grab(monitor))
-                            img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-                            score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
-                            # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
-                            ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
-                            score = ocr.get_score(thresh)
+                            score = getScore(img)
                             time.sleep(0.7)
                             count += 1
 
                         if count >= 4:
                             score = 0
-
-                        print(f'Bonus: {genome.fitness}')
+                        # print(f'Bonus: {genome.fitness}')
                         try:
-                            print(f'Game Over! Game: {game} - Score: {int(score)}, Time Score: {time_score}', end='\n\n')
+                            print(f'Game Over! Game: {game} - \nScore: {int(score)}\nBonus: {genome.fitness}\nTime: {time_score}\nFitness: {genome.fitness + int(score)}', end='\n\n')
+                            gamelog.write(f'Game Over! Game: {game} - ID: {genome_id}\nScore: {int(score)}\nBonus: {genome.fitness}\nTime: {time_score}\nFitness: {genome.fitness + int(score)}\n\n')
                         except:
                             print(f"{score} is not an integer")
-
-                        # print(f'Upper: {time_score * ((int(score)/100)+20)}, Lower: {time_score * 5}', end='\n\n')
-                        if time_score < 1800 and False:
-                            if int(score) > time_score * ((int(score)/100)+13):
-                                score = (time_score - 2) * 10
-                                print(f'Adjusted Score: {score}')
-                            elif int(score) < time_score * 5:
-                                score = (time_score) * 8
-                                print(f'Adjusted Score: {score}')
 
                         # make sure game lasted over three seconds
                         if time_score >= 3:
@@ -355,27 +358,47 @@ def eval_genomes(genomes, config):
                                 force_gameover = False
 
                 if len(points) > 25: # if nn spams down and scrolls the page
-                    # pyautogui.scroll(20, x=690, y=450)
                     force_gameover = True
                     scroll_go = True
                     print('scroll gameover')
                     time.sleep(0.5)
 
-                # when game cant see the game over text, it times out
-                if score_time - time.time() > fgo_thresh:
-                    print('timeout')
-                    force_gameover = True
-
                 if int(time.time())%1000 == 0:
                     pyautogui.scroll(-10, x=690, y=450)
                     pyautogui.scroll(30, x=690, y=450)
                     print('auto scrolling')
-                    if time.time() - score_time > 1800:
-                        reload()
-                        pyautogui.press('up')
-                        time.sleep(1)
-                        pyautogui.press('up')
-                        score_time = time.time()
+
+                if int(time.time())%750 < 3:
+                    if first:
+                        print('score check')
+                        first = False
+                    if last_frame:
+                        score = getScore(screen)
+                        if score != '':
+                            scores.append(score)
+                        last_frame = False
+                    else:
+                        last_frame = True
+
+                elif len(scores) != 0:
+                    # print(scores)
+                    cont = False
+                    for i in range(len(scores)):
+                        if scores[i-1] == scores[i]:
+                            continue
+                        else:
+                            cont = True
+                            break
+
+                    if not cont:
+                        print('score check: failed')
+                        force_gameover = True
+                    else:
+                        print('score check: passed')
+
+                    scores = []
+                    first = True
+
 
 
                 last_dist = dist
@@ -388,6 +411,7 @@ def eval_genomes(genomes, config):
 winner = ''
 stats = ''
 config = None
+gamelog = open('gamelog.txt', 'a+')
 def run(config_path):
     global winner, stats, config
     calibrate() # make sure game starts the same way everytime
@@ -397,8 +421,8 @@ def run(config_path):
 
     p = neat.Population(config)
 
-    # p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-6')
-    # print('restored population')
+    p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-174')
+    print('restored population')
 
     p.add_reporter(neat.StdOutReporter(True))
     stats = neat.StatisticsReporter()
@@ -406,9 +430,11 @@ def run(config_path):
     p.add_reporter(neat.Checkpointer(1, 5))
 
     try:
-        winner = p.run(eval_genomes, 100) # run for up to 100 generations
+        winner = p.run(eval_genomes, 26) # run for up to 100 generations
     except Exception as e:
         print(e)
+
+    gamelog.close()
 
     # print('DONE TRAINING')
     with open('winner-ctrnn-new', 'wb') as f:

@@ -278,6 +278,7 @@ def eval_genomes(genomes, config):
                     pyautogui.press('up')
                 elif output[1] >= output[0] and output[1] >= output[2]:
                     pyautogui.press('down')
+                    genome.fitness += 0.5
                     if cac_y > 310:
                         genome.fitness += 150
                 elif output[2] >= output[0] and output[2] >= output[1]:
@@ -306,26 +307,26 @@ def eval_genomes(genomes, config):
                         score = ''
                         count = 0
                         while score == '' and count < 5:
+                            pyautogui.scroll(10, x=690, y=450)
                             img = np.array(sct.grab(monitor))
                             img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
                             score_img = img[score_ROI[0][0]:score_ROI[0][1], score_ROI[1][0]:score_ROI[1][1]]
                             # gray_score = cv2.cvtColor(score_img, cv2.COLOR_BGR2GRAY)
                             ret, thresh = cv2.threshold(score_img,90,255,cv2.THRESH_BINARY)
                             score = ocr.get_score(thresh)
-                            time.sleep(0.1)
+                            time.sleep(0.7)
                             count += 1
 
                         if count >= 4:
                             score = 0
-
-                        print(f'Bonus: {genome.fitness}')
+                        # print(f'Bonus: {genome.fitness}')
                         try:
-                            print(f'Game Over! Game: {game} - Score: {int(score)}, Time Score: {time_score}', end='\n\n')
+                            print(f'Game Over! Game: {game} - \nScore: {int(score)}\nBonus: {genome.fitness}\nTime: {time_score}\nFitness: {genome.fitness + int(score)}', end='\n\n')
                         except:
                             print(f"{score} is not an integer")
 
                         # print(f'Upper: {time_score * ((int(score)/100)+20)}, Lower: {time_score * 5}', end='\n\n')
-                        if time_score < 1800:
+                        if time_score < 1800 and False:
                             if int(score) > time_score * ((int(score)/100)+13):
                                 score = (time_score - 2) * 10
                                 print(f'Adjusted Score: {score}')
@@ -360,13 +361,22 @@ def eval_genomes(genomes, config):
                     print('scroll gameover')
                     time.sleep(0.5)
 
-                # when game cant see the game over test, it times out
+                # when game cant see the game over text, it times out
                 if score_time - time.time() > fgo_thresh:
                     print('timeout')
                     force_gameover = True
 
                 if int(time.time())%1000 == 0:
-                    pyautogui.scroll(20, x=690, y=450)
+                    pyautogui.scroll(-10, x=690, y=450)
+                    pyautogui.scroll(30, x=690, y=450)
+                    print('auto scrolling')
+                    if time.time() - score_time > 1800:
+                        reload()
+                        pyautogui.press('up')
+                        time.sleep(1)
+                        pyautogui.press('up')
+                        score_time = time.time()
+
 
                 last_dist = dist
 
